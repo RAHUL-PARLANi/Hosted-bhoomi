@@ -5,7 +5,7 @@ import Navbar from './navbar';
 import axios from "axios";
 import Footer from './footer';
 import AOS from 'aos'
-class SLlist extends Component {
+class WLlist extends Component {
     
   constructor(props) {
       super(props);
@@ -294,4 +294,4 @@ function openfilter1(params) {
 function closefilter1(params) {
   document.getElementById('filteroperner1').style.display='none'
 }
-export default SLlist;
+export default WLlist;

@@ -58,7 +58,7 @@ const order=(e)=>{
           &times;
         </div>
       </div>
-      <div id=''>
+      <div id='mchecker'>
       <div className='heading3'>CHECKOUT</div>
       <h4 style={{'textAlign':'center'}}>The Services are only availabe in Gwalior!</h4>
       <div className='check-out-info'>

@@ -24,7 +24,7 @@ import Fllist from './components/MainSite/fllist';
 import Homepage from './components/MainSite/homepage';
 import PLinfo  from './components/MainSite/pldp';
 import  WLinfo  from './components/MainSite/wlinfo';
-import SLinfo  from './components/MainSite/sllist';
+import SLinfo  from './components/MainSite/slinfo';
 import Clinfo from './components/MainSite/clinfo';
 import { CartProvider, useCart } from "react-use-cart";
 import Cart from './components/MainSite/cart';
@@ -78,11 +78,11 @@ useEffect(() => {
              <Route path='/' element={<Homepage/>}/>
              <Route path='/checkout' element={<Checkout/>}/>
              <Route path='/cart' element={<Cart/>}/>
-             <Route path='/panellights/' element={<Fllist title={'PANEL LIGHTS'} category={['SELECT','PC','3 IN 1','AL','OTHER']}/>}/>
-             <Route path='/walllights/' element={<Fllist title={'WALL LIGHTS'} category={['SELECT','AL','AL/CYL','SQ','TRIM R','OTHER']}/>}/>
-             <Route path='/streetlights/' element={<Fllist title={'STREET LIGHTS'} category={['SELECT','FM','GM','LNS','GM-S','DOB','OTHER']}/>}/>
-             <Route path='/floodlights/' element={<Fllist title={'FLOOD LIGHTS'} category={['SELECT','BC','GM','LNS','DOB','SHN','OTHER']}/>}/>
-             <Route path='/concealedlights/' element={<Fllist  title={'CONCEALED LIGHTS'} category={['SELECT','PC','AL','PC 3 IN 1','AL 3 IN 1','OTHER']}/>}/>
+             <Route path='/panellights/' element={<Fllist title={'PANEL LIGHTS'} category={['PC','3 IN 1','AL','OTHER']}/>}/>
+             <Route path='/walllights/' element={<Fllist title={'WALL LIGHTS'} category={['AL','AL/CYL','SQ','TRIM R','OTHER']}/>}/>
+             <Route path='/streetlights/' element={<Fllist title={'STREET LIGHTS'} category={['FM','GM','LNS','GM-S','DOB','OTHER']}/>}/>
+             <Route path='/floodlights/' element={<Fllist title={'FLOOD LIGHTS'} category={['BC','GM','LNS','DOB','SHN','OTHER']}/>}/>
+             <Route path='/concealedlights/' element={<Fllist  title={'CONCEALED LIGHTS'} category={['PC','AL','PC 3 IN 1','AL 3 IN 1','OTHER']}/>}/>
              <Route path='/floodlight/:id' element={<Flinfo/>}/>
              <Route path='/panellight/:id' element={<PLinfo/>}/>
              <Route path='/streetlight/:id' element={<SLinfo/>}/>

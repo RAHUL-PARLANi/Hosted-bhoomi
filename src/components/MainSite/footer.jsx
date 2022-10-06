@@ -44,10 +44,9 @@ const Footer = () => {
     <FontAwesomeIcon icon="fa-solid fa-copyright" /> BHOOMI EandD TRADING COMPANY 2022. ALL RIGHTS RESERVED.
     </div>
     <div className='creditME'>
-    Developed and Designed by <a style={{'color':'white',fontWeight:'bolder'}} href='www.linkedin.com/in/rahul-parlani-b02a0a226'><b>Rahul Parlani</b></a> of ITM.
+    Developed and Designed by <a style={{'textDecoration':'inherit','color':'white'}} href='https://www.linkedin.com/in/rahul-parlani-b02a0a226/'><b>Rahul Parlani</b></a> of ITM.
     </div>
     </>
   )
 }
-
 export default Footer
