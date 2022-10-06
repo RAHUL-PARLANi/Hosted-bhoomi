@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c4ecc95.css",
-    "main.js": "/static/js/main.4fe36ccc.js",
+    "main.css": "/static/css/main.23dc1f3e.css",
+    "main.js": "/static/js/main.6b900f28.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/Make-In-IndiaLogo.png": "/static/media/Make-In-IndiaLogo.87be93f43fac4844b0ab.png",
+    "static/media/Make-In-IndiaLogo.png": "/static/media/Make-In-IndiaLogo.0d4778e35e3955ded7f2.png",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/footer.png": "/static/media/footer.52d954785415f72bc020.png",
@@ -19,11 +19,11 @@
     "static/media/box-review.png": "/static/media/box-review.7cc92f3bcf2e8a452443.png",
     "static/media/logo.png": "/static/media/logo.90ed20ef9161a9a3c7bf.png",
     "index.html": "/index.html",
-    "main.5c4ecc95.css.map": "/static/css/main.5c4ecc95.css.map",
-    "main.4fe36ccc.js.map": "/static/js/main.4fe36ccc.js.map"
+    "main.23dc1f3e.css.map": "/static/css/main.23dc1f3e.css.map",
+    "main.6b900f28.js.map": "/static/js/main.6b900f28.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c4ecc95.css",
-    "static/js/main.4fe36ccc.js"
+    "static/css/main.23dc1f3e.css",
+    "static/js/main.6b900f28.js"
   ]
 }
