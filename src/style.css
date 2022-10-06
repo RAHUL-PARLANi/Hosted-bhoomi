@@ -667,7 +667,7 @@ justify-content: space-around;
     height: 600px;
 }
 .slideshow{
-    margin-top: 20px;
+    margin-top: 2px;
 }
 .all-p1{
     display: flex;
@@ -899,7 +899,7 @@ td{
 #Notidication ,#Notidication-delete, #Notidication-update{
     display: none;
     position: fixed;
-    top: 50px;
+    top: 150px;
     left: 45%;
     padding: 10px;
     right: auto;
