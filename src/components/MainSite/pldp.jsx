@@ -52,12 +52,12 @@ const Plinfo = () => {
                     <div className='Upper-part'>
                     <div className='Image-part'>
                     <div className='Small-img'>
-                        <img className='mini-image' src={data.productImage} width='100px' height='100px' alt='product1'/>
-                        <img className='mini-image' src={data.productImage2} width='100px' height='100px' alt='side view of product1'/>
-                        <img className='mini-image' src={data.productImage3} width='100px' height='100px' alt='side view of product1'/>
+                        <img className='mini-image' onClick={()=>{imgChangerlite(data.productImage)}} src={data.productImage} width='100px' height='100px' alt='product1'/>
+                        <img className='mini-image' onClick={()=>{imgChangerlite(data.productImage2)}} src={data.productImage2} width='100px' height='100px' alt='side view of product1'/>
+                        <img className='mini-image' onClick={()=>{imgChangerlite(data.productImage3)}} src={data.productImage3} width='100px' height='100px' alt='side view of product1'/>
                     </div>
                     <div className='Main-img'>
-                    <img   src={data.productImage} width='400px' height='400px' alt='product1'/>
+                    <img   id='MainImg' src={data.productImage} width='400px' height='400px' alt='product1'/>
                     </div>
                     </div>
                     <div className='Detail-part'>
@@ -139,4 +139,7 @@ const Plinfo = () => {
                 
 }
 
+function imgChangerlite(value) {
+    document.getElementById('MainImg').src=value
+}
 export default Plinfo
