@@ -38,6 +38,14 @@ library.add(fas)
 function App() {
 const [index,setIndex]=useState(1);
 const [name,setName]=useState('');
+const [loading ,setLoading]=useState(true);
+const spinner = document.getElementById('spinner');
+if(spinner){
+  setTimeout(() => {
+    spinner.style.display='none';
+    setLoading(false);
+  }, 3000);
+}
 
 useEffect(() => {
  AOS.init();
@@ -55,7 +63,7 @@ useEffect(() => {
 
   
   return (
-   <div className="App">
+    !loading && <div className="App">
     <div id='Notidication'>{name} Added to Cart Successfully!</div>
     <div id='Notidication-update'>{name} Updated Successfully!</div>
     <div id='Notidication-delete'>{name} Removed Successfully!</div>

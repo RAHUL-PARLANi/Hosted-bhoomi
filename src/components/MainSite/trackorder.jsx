@@ -7,6 +7,7 @@ const Trackorder = () => {
 const [input, setinput] = useState('')
 const [data,setdata]=useState([]);
 
+
 const submit=()=>{
     axios.post('https://bejewelled-kleicha-3163f4.netlify.app/.netlify/functions/api/order/trackbyid',{'yoda':input}).then(
         res=>setdata(res.data))
@@ -16,8 +17,9 @@ const cancelcal=(id)=>{
       res=>{alert(res.data.Message)})
   }
 const View=()=>{
+  
     return <>
-            <div  className='Info'>
+            <div  className='Info' >
         <div className='boxer'><div className='info-main'>Delivery Status :</div><div className="info-main-data">{data?.DeliveryStatus}</div>
         </div><div className='boxer'><div className='info-label'>Name :</div><div className="info-data">{data?.CustomerName}</div>
         </div><div className='boxer'><div className='info-label'>Phone Number :</div><div className="info-data">{data?.CustomerNo}</div>
@@ -61,10 +63,9 @@ const View=()=>{
 
   return (<>
     <Navbar/>
-    <div className='productfilter'>
-               
-            <div className="same tags option" >SEARCH BY ID : <input onChange={(e)=>{setinput(e.target.value)}} required style={{"border": "#7b283c solid 1px","backgroundColor": "#823f4f","borderRadius": "3px"}}/></div>
-            <button onClick={()=>{submit()}} className='clearfilter'>TRACK ORDER</button>
+    <div className='productfilter' >
+               <div className="same tags option" >SEARCH BY ID :  <input  onChange={(e)=>{setinput(e.target.value)}} required style={{"border": "#7b283c solid 1px","backgroundColor": "#823f4f","borderRadius": "3px"}}/></div>
+               <button onClick={()=>{submit()}} className='clearfilter'>TRACK ORDER</button>
     </div>
     <View/>   
     <Footer/>
