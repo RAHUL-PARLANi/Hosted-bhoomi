@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.75a9d89d.css",
+    "main.js": "./static/js/main.aa7dff43.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "./static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Make-In-IndiaLogo.png": "./static/media/Make-In-IndiaLogo.87be93f43fac4844b0ab.png",
+    "static/media/fontawesome-webfont.eot": "./static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "./static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/footer.png": "./static/media/footer.52d954785415f72bc020.png",
+    "static/media/glyphicons-halflings-regular.svg": "./static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "./static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "./static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/download-removebg-preview.png": "./static/media/download-removebg-preview.6200653e8e1475dab877.png",
+    "static/media/glyphicons-halflings-regular.ttf": "./static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
+    "static/media/save_energy-removebg-preview.png": "./static/media/save_energy-removebg-preview.42a55812a2fb7c318da3.png",
+    "static/media/glyphicons-halflings-regular.woff": "./static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
+    "static/media/glyphicons-halflings-regular.eot": "./static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
+    "static/media/glyphicons-halflings-regular.woff2": "./static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
+    "static/media/box-review.png": "./static/media/box-review.7cc92f3bcf2e8a452443.png",
+    "static/media/logo.png": "./static/media/logo.90ed20ef9161a9a3c7bf.png",
+    "index.html": "./index.html",
+    "main.75a9d89d.css.map": "./static/css/main.75a9d89d.css.map",
+    "main.aa7dff43.js.map": "./static/js/main.aa7dff43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75a9d89d.css",
+    "static/js/main.aa7dff43.js"
+  ]
+}
