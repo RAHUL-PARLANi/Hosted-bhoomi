@@ -15,6 +15,7 @@ const Homepage = () => {
     const [no,setno]=useState('')
     const [address, setaddress] = useState('')
     const [desc ,setdesc]=useState('')
+   
     useEffect(() => {
         AOS.init(
             {
@@ -38,8 +39,7 @@ const Homepage = () => {
     }
     
   return (
-    <>
-          <Navbar/>
+   <>  <Navbar/>
          <div className='pop'>
         <form className='Service-from' id='form-closed' data-aos="fade-down-right" data-aos-duration="800"   data-aos-easing="ease-in-back" onSubmit={handleSubmit} >
             <div style={{

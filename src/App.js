@@ -33,19 +33,15 @@ import OrderList from './components/adminPanel/Orderlist';
 import Trackorder from './components/MainSite/trackorder';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import WLlist from './components/MainSite/wllist';
+import SLlist from './components/MainSite/sllist';
+import Pllist from './components/MainSite/pllist';
+import Cllist from './components/MainSite/cllist';
 library.add(fas)
   
 function App() {
 const [index,setIndex]=useState(1);
 const [name,setName]=useState('');
-const [loading ,setLoading]=useState(true);
-const spinner = document.getElementById('spinner');
-if(spinner){
-  setTimeout(() => {
-    spinner.style.display='none';
-    setLoading(false);
-  }, 2500);
-}
 
 useEffect(() => {
  AOS.init();
@@ -63,7 +59,7 @@ useEffect(() => {
 
   
   return (
-    !loading && <div className="App">
+     <div className="App">
     <div id='Notidication'>{name} Added to Cart Successfully!</div>
     <div id='Notidication-update'>{name} Updated Successfully!</div>
     <div id='Notidication-delete'>{name} Removed Successfully!</div>
@@ -78,11 +74,11 @@ useEffect(() => {
              <Route path='/' element={<Homepage/>}/>
              <Route path='/checkout' element={<Checkout/>}/>
              <Route path='/cart' element={<Cart/>}/>
-             <Route path='/panellights/' element={<Fllist title={'PANEL LIGHTS'} category={['PC','3 IN 1','AL','OTHER']}/>}/>
-             <Route path='/walllights/' element={<Fllist title={'WALL LIGHTS'} category={['AL','AL/CYL','SQ','TRIM R','OTHER']}/>}/>
-             <Route path='/streetlights/' element={<Fllist title={'STREET LIGHTS'} category={['FM','GM','LNS','GM-S','DOB','OTHER']}/>}/>
+             <Route path='/panellights/' element={<Pllist title={'PANEL LIGHTS'} category={['PC','3 IN 1','AL','OTHER']}/>}/>
+             <Route path='/walllights/' element={<WLlist title={'WALL LIGHTS'} category={['AL','AL/CYL','SQ','TRIM R','OTHER']}/>}/>
+             <Route path='/streetlights/' element={<SLlist title={'STREET LIGHTS'} category={['FM','GM','LNS','GM-S','DOB','OTHER']}/>}/>
              <Route path='/floodlights/' element={<Fllist title={'FLOOD LIGHTS'} category={['BC','GM','LNS','DOB','SHN','OTHER']}/>}/>
-             <Route path='/concealedlights/' element={<Fllist  title={'CONCEALED LIGHTS'} category={['PC','AL','PC 3 IN 1','AL 3 IN 1','OTHER']}/>}/>
+             <Route path='/concealedlights/' element={<Cllist  title={'CONCEALED LIGHTS'} category={['PC','AL','PC 3 IN 1','AL 3 IN 1','OTHER']}/>}/>
              <Route path='/floodlight/:id' element={<Flinfo/>}/>
              <Route path='/panellight/:id' element={<PLinfo/>}/>
              <Route path='/streetlight/:id' element={<SLinfo/>}/>

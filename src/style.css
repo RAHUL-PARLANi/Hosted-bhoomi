@@ -1225,6 +1225,16 @@ td{
     width: 40px;
     height: 50px;
   }
+  #Searchbox{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #7b283c 4px solid;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
   @media (max-width:420px ){
     #relo{
         display: block;
@@ -1835,7 +1845,7 @@ justify-content: space-around;
 .slideshow{
     width: 100%;
 }
-.slideshow,#mchecker ,.productfilter
+.slideshow,#mchecker 
 ,.ProductView{
     margin-top: 85px;
 }
@@ -1893,6 +1903,9 @@ justify-content: space-around;
 }
 .productfilter input{
     width: 80%;
+}
+#Searchbox{
+    margin-top: 85px;
 }
 
 }
