@@ -1,0 +1,66 @@
+{
+  "name": "frontend",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axion": "^0.1.0",
+    "axios": "^0.27.2",
+    "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^3.4.1",
+    "csv-react-table": "^2.0.7",
+    "datatable": "^2.0.2",
+    "datatables.net": "^1.12.1",
+    "datatables.net-buttons": "^2.2.3",
+    "datatables.net-dt": "^1.12.1",
+    "font-awesome": "^4.7.0",
+    "google-map-react": "^2.2.0",
+    "iconify": "^1.4.0",
+    "jquery": "^3.6.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
+    "react-csv": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-js-table-with-csv-dl": "^0.9.7",
+    "react-read-more-read-less": "^1.0.7",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-star-ratings": "^2.3.0",
+    "react-table": "^7.8.0",
+    "react-use-cart": "^1.13.0",
+    "read-more-react": "^1.0.10",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
