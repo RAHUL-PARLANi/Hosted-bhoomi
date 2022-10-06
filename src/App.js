@@ -44,7 +44,7 @@ if(spinner){
   setTimeout(() => {
     spinner.style.display='none';
     setLoading(false);
-  }, 1000);
+  }, 2500);
 }
 
 useEffect(() => {
