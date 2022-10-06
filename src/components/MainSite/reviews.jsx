@@ -1,10 +1,19 @@
 import { Carousel } from 'react-responsive-carousel';
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
 
 const Reviews = () => {
+  useEffect(() => {
+    AOS.init(
+      {
+        duration : 1000
+      }    
+    );
+   }
+, [])
   return (
     <>
-    <div className='box-t'>
+    <div className='box-t' data-aos="zoom-in-up">
       
       <div className='left'>
            <img alt='alt' src='https://i.pinimg.com/474x/f9/8f/c1/f98fc169a3586c835615b36287277f2c--indian-man-jumanji.jpg'/></div>

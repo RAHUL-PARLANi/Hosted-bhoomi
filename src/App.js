@@ -31,7 +31,8 @@ import Cart from './components/MainSite/cart';
 import Checkout from './components/MainSite/checkout';
 import OrderList from './components/adminPanel/Orderlist';
 import Trackorder from './components/MainSite/trackorder';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 library.add(fas)
   
 function App() {
@@ -39,6 +40,7 @@ const [index,setIndex]=useState(1);
 const [name,setName]=useState('');
 
 useEffect(() => {
+ AOS.init();
  setTimeout(() => {
   document.getElementById('Notidication').style.display='none'
  }, 1000);

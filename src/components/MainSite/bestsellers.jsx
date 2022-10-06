@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import AOS from "aos";
 import axios from "axios";
 class Bestsellers extends Component {
     
@@ -17,6 +17,9 @@ class Bestsellers extends Component {
 
     }
     componentDidMount() {
+      AOS.init({
+        duration:1000
+      })
       axios.get('https://bejewelled-kleicha-3163f4.netlify.app/.netlify/functions/api/sl/TopStreetlight/')
       .then(res => {
           
@@ -63,7 +66,7 @@ class Bestsellers extends Component {
       return this.state.products.map(products  => {
         return <>
         <Link className='linkstyiling' style={{'color':'inherit' , 'textDecoration':'inherit'}} to={"/floodlight/" + products._id} >
-        <div className='card1' key={products._id}>
+        <div className='card1' data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <div className='topMark'>#{products.productSerialNumber}</div>
                   <img src={products.productImage}  alt='Main'/>
@@ -88,7 +91,7 @@ class Bestsellers extends Component {
       return this.state.pl.map(products  => {
         return <>
         <Link className='linkstyiling' style={{'color':'inherit' , 'textDecoration':'inherit'}} to={"/panellight/" + products._id} >
-        <div className='card1' key={products._id}>
+        <div className='card1' data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <div className='topMark'>#{products.productSerialNumber}</div>
                   <img src={products.productImage}  alt='Main'/>
@@ -112,7 +115,7 @@ class Bestsellers extends Component {
       return this.state.wl.map(products  => {
         return <>
         <Link className='linkstyiling' style={{'color':'inherit' , 'textDecoration':'inherit'}} to={"/walllight/" + products._id} >
-        <div className='card1' key={products._id}>
+        <div className='card1' data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <div className='topMark'>#{products.productSerialNumber}</div>
                   <img src={products.productImage}  alt='Main'/>
@@ -138,7 +141,7 @@ class Bestsellers extends Component {
       return this.state.sl.map(products  => {
         return <>
         <Link className='linkstyiling' style={{'color':'inherit' , 'textDecoration':'inherit'}} to={"/streetlight/" + products._id} >
-        <div className='card1' key={products._id}>
+        <div className='card1' data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
               <div className='topMark'>#{products.productSerialNumber}</div>
                   
@@ -164,7 +167,7 @@ class Bestsellers extends Component {
       return this.state.cl.map(products  => {
         return <>
             <Link className='linkstyiling' style={{'color':'inherit' , 'textDecoration':'inherit'}} to={"/concealedlight/" + products._id} >
-        <div className='card1' key={products._id}>
+        <div className='card1' data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
               <div className='topMark'>#{products.productSerialNumber}</div>
                   

@@ -389,9 +389,6 @@ form{
     margin-right: 20px;
     justify-content: space-evenly;
     }
-.products::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
 .image-card{
     top: 0;
     position: relative;
@@ -425,7 +422,10 @@ form{
 }
 .NavBar-main{
     display: flex;
+    position: relative;
+    z-index: 3;
     flex-direction: column;
+    background: #ffffff;
 }
 .UnderNavbar{
     border-top: 1px solid whitesmoke;
@@ -494,14 +494,13 @@ color: rgb(255,255,255);
     margin-top: 20px;
     width: 90%;
     flex-direction: column;
+    
 }
 .products{
     display: flex;
     width: 100%;
-    overflow-x: auto;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-
+    overflow-x: scroll;
+   
 }
 .heading2{
     margin-top: 20px;
@@ -1152,12 +1151,14 @@ td{
   ::-webkit-scrollbar-track {
     background:#7b283c;
     max-width: 5px; 
+    border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background-color:white;
     border-radius:12px;
+    max-width: 5px;
     border: 3px solid black;
     }
   
@@ -1188,7 +1189,7 @@ td{
     background-color: white;
     z-index: 2;
     width: 100%;
-  
+    overflow-y: scroll;
 }
 #relo1{
     transform: translateX(-100%);
@@ -1241,7 +1242,7 @@ td{
         justify-content: space-between;
     }
     .Listproducts{
-        margin-top: 85px;
+        margin-top: 10px;
     }
     .UnderNavbar{
         display: none;
@@ -1258,6 +1259,7 @@ td{
     }
     .slide img{
         height: 250px;
+        width: 100%;
     }
     .Tittle{
         margin: 5px;
@@ -1305,9 +1307,7 @@ td{
         margin-bottom: 20px;
         justify-content: space-evenly;
     }
-    .products::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
-    }
+   
     .image-card{
         top: 0;
         position: relative;
@@ -1813,23 +1813,22 @@ justify-content: space-around;
     
 }
 .image-card img{
-    position:relative;
-    top: 0;
-    z-index: -1;
     height: 230px;
     width: 200px;
-    border-radius: 5px;
-}
-.topMark{
-    position:relative;
-    z-index: -1;
-}
+    }
+
 .linkstyiling{
     width: 376px;
+}
+.slideshow{
+    width: 100%;
 }
 .slideshow,#mchecker ,.productfilter
 ,.ProductView{
     margin-top: 85px;
+}
+.pop{
+    width:100%;
 }
 
 }

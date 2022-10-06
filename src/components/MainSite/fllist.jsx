@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from './navbar';
 import axios from "axios";
 import Footer from './footer';
+import AOS from 'aos'
 class Fllist extends Component {
     
   constructor(props) {
@@ -18,6 +19,9 @@ class Fllist extends Component {
 
     }
     componentDidMount() {
+      AOS.init({
+        duration:1000
+      })
       axios.get('https://bejewelled-kleicha-3163f4.netlify.app/.netlify/functions/api/sl')
       .then(res => {
           
@@ -64,7 +68,7 @@ class Fllist extends Component {
       return this.state.products.map(products  => {
         return <>
         
-        <div className='card1' key={products._id}>
+        <div className='card1'  data-aos="zoom-in-up" key={products._id}>
             <div className='image-card'>
                 <img src={products.productImage}  alt='Main'/>
             </div>
@@ -88,7 +92,7 @@ class Fllist extends Component {
       return this.state.pl.map(products  => {
         return <>
         
-        <div className='card1' key={products._id}>
+        <div className='card1'  data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <img src={products.productImage}  alt='Main'/>
               </div>
@@ -111,12 +115,12 @@ class Fllist extends Component {
       return this.state.wl.map(products  => {
         return <>
         
-        <div className='card1' key={products._id}>
+        <div className='card1'  data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <img src={products.productImage}  alt='Main'/>
               </div>
               <div className='detail-card'>
-              <div className='uper-details'>
+              <div className='uper-details'> 
               <div className='name'>{products.productProductCode}</div>
               <div className='product-price'><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" /> {products.productRupees}/-</div>
               <div className='tags'>Watts :</div><div className='tags-details'>{products.productWatt}</div>
@@ -136,7 +140,7 @@ class Fllist extends Component {
       return this.state.sl.map(products  => {
         return <>
         
-        <div className='card1' key={products._id}>
+        <div className='card1'  data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <img src={products.productImage}  alt='Main'/>
               </div>
@@ -160,7 +164,7 @@ class Fllist extends Component {
       return this.state.cl.map(products  => {
         return <>
         
-        <div className='card1' key={products._id}>
+        <div className='card1'  data-aos="zoom-in-up" key={products._id}>
               <div className='image-card'>
                   <img src={products.productImage}  alt='Main'/>
               </div>
@@ -208,7 +212,7 @@ class Fllist extends Component {
           <button className='clearfilter'>CLEAR FILTER</button>
       </div>
       <div className='productsdisplay'>
-            <div className='heading3' >{this.props.title}</div>
+            <div className='heading3'data-aos="fade-down" >{this.props.title}</div>
             <div className='all-p'>
             {this.bgsList()}
             </div>
