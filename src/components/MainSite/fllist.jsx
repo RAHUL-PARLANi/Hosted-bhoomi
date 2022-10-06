@@ -184,6 +184,55 @@ class Fllist extends Component {
         </>
     })
     }}}
+    filterfl(value){
+      const updatedList=this.state.products.filter((curElem)=>{
+             return  curElem.productCategory ===  value;
+      })
+      console.log(updatedList);
+      this.setState({bgs:updatedList})
+      const json=JSON.stringify(updatedList)
+      console.log(json);
+      sessionStorage.setItem('fl',json);
+  }
+  filtercl(value){
+    const updatedList=this.state.cl.filter((curElem)=>{
+           return  curElem.productCategory ===  value;
+    })
+    console.log(updatedList);
+    this.setState({bgs:updatedList})
+    const json=JSON.stringify(updatedList)
+    console.log(json);
+    sessionStorage.setItem('cl',json);
+}
+filterpl(value){
+  const updatedList=this.state.pl.filter((curElem)=>{
+         return  curElem.productCategory ===  value;
+  })
+  console.log(updatedList);
+  this.setState({bgs:updatedList})
+  const json=JSON.stringify(updatedList)
+  console.log(json);
+  sessionStorage.setItem('pl',json);
+}filtersl(value){
+  const updatedList=this.state.sl.filter((curElem)=>{
+         return  curElem.productCategory ===  value;
+  })
+  console.log(updatedList);
+  this.setState({bgs:updatedList})
+  const json=JSON.stringify(updatedList)
+  console.log(json);
+  sessionStorage.setItem('sl',json);
+}filterwl(value){
+  const updatedList=this.state.wl.filter((curElem)=>{
+         return  curElem.productCategory ===  value;
+  })
+  console.log(updatedList);
+  this.setState({bgs:updatedList})
+  const json=JSON.stringify(updatedList)
+  console.log(json);
+  sessionStorage.setItem('wl',json);
+}
+ 
   
 
   render() {
@@ -192,24 +241,32 @@ class Fllist extends Component {
     <div className='Listproducts'>
       <div className='productfilter'>
         <div className='Sorter' style={{'display':'flex'}}>
-            <div className='same tags'>SORT : </div>
-            <select className='select' style={{'color':'black'}}>
-            <option style={{'color':'black'}}><div className='same1 tags-details'>SELECT</div></option>
-            <option style={{'color':'black'}}><div className='same1 tags-details'>BY A TO Z</div></option>
-            <option style={{'color':'black'}}><div className='same1 tags-details'>BY Z TO A</div></option>
-            <option style={{'color':'black'}}><div className='same1 tags-details'>BY PRICE</div></option>
-            <option style={{'color':'black'}}><div className='same1 tags-details'>BY MOST POPULAR</div></option>
-            <option style={{'color':'black'}}><div className='same1 tags-details'>BY LATEST</div></option>
-            </select>
+            <div  className='same tags'>SORT : </div>
+            <div className='select' style={{'position':'absolute','color':'#7b283c'}}>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div onClick={()=>{openfilter()}} style={{'marginLeft':'0px','padding':'5px'}} className='same1 tags-details'>SELECT</div></div>
+            <div id='filteroperner' style={{'display':'none'}}><div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div className='same1 tags-details'>BY A TO Z</div></div>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div className='same1 tags-details'>BY Z TO A</div></div>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div className='same1 tags-details'>BY PRICE</div></div>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div className='same1 tags-details'>BY MOST POPULAR</div></div>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div className='same1 tags-details'>BY LATEST</div>
+            </div>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div onClick={()=>{closefilter()}} className='same1 tags-details'>CLOSE</div>
+            </div>
+            </div></div>
         </div>
-        <div className='Filter' style={{'display':'flex'}}>
-            <div className="same tags option">CATEGORY : </div>
-            <select className='select' style={{'color':'black'}}>
+        <div className='Sorter' style={{'display':'flex'}}>
+            <div  className='same tags'>FILTER : </div>
+            <div className='select' style={{'position':'absolute','color':'black'}}>
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div onClick={()=>{openfilter1()}} style={{'marginLeft':'0px','padding':'5px'}} className='same1 tags-details'>SELECT</div></div>
+            <div id='filteroperner1' style={{'display':'none'}}>
             {this.props.category.map(element=>{
-              return   <option  style={{'color':'black'}}><div className='same1  tags-details'>{element}</div></option>
-            })}</select>
-          </div>
-          <button className='clearfilter'>CLEAR FILTER</button>
+              return   <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div className='same1 tags-details'>{element}</div></div>
+            })}
+            <div style={{'color':'#7b283c','borderBottom':'2px solid #7b283c'}}><div onClick={()=>{closefilter1()}} className='same1 tags-details'>CLOSE</div>
+            </div>
+            </div></div>
+        </div>
+        <button className='clearfilter'>CLEAR FILTER</button>
       </div>
       <div className='productsdisplay'>
             <div className='heading3'data-aos="fade-down" >{this.props.title}</div>
@@ -222,5 +279,19 @@ class Fllist extends Component {
     </>
   )
 }
+}
+function openfilter(params) {
+  document.getElementById('filteroperner').style.display='block'
+}
+
+function closefilter(params) {
+  document.getElementById('filteroperner').style.display='none'
+}
+function openfilter1(params) {
+  document.getElementById('filteroperner1').style.display='block'
+}
+
+function closefilter1(params) {
+  document.getElementById('filteroperner1').style.display='none'
 }
 export default Fllist;

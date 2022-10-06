@@ -495,6 +495,17 @@ color: rgb(255,255,255);
     flex-direction: column;
     
 }
+.select{
+    width: 150px;
+    margin-top: 30px;
+    background-color: white;
+    z-index: 2;
+    border-left: 2px solid #7b283c;
+    border-right: 2px solid #7b283c;
+    border-top:  2px solid #7b283c;
+    border-radius: 5px;
+    font-weight: 600;
+}
 .products{
     display: flex;
     width: 100%;
@@ -647,6 +658,7 @@ justify-content: space-around;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    height: 80PX;
     border-radius: 10px;
     justify-content: space-around;
 }
@@ -1537,6 +1549,7 @@ justify-content: space-around;
     color: white;
     padding: 10px;
     width:300px;
+    height: 85PX;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -1557,7 +1570,7 @@ justify-content: space-around;
     flex-direction: column;
  }
 .select{
- width: 70px;
+ width: 80px;
  background-color: white;
  color: #7b283c;
 }
