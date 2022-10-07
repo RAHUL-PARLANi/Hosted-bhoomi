@@ -9,6 +9,8 @@ import logo from '../../images/logo1.png'
 import { useState } from 'react';
 import axios from "axios"
 import AOS from "aos";
+import Slimage from '../../images/streetlights.jpg';
+import flimage from '../../images/Flcatalog.jpg';
 const Homepage = () => {
     const [index,setIndex]=useState(1)
     const [name, setname] = useState('')
@@ -93,13 +95,13 @@ const Homepage = () => {
         </div>
         <div className='all-p1'>
             <Link to="/floodlights/" style={{'textDecoration':'inherit','color':'inherit'}}><div  data-aos="zoom-in-up" className='card2'>
-                <img alt="FLOOD LIGHTS" src='https://iili.io/PjCZjS.png'/>
+                <img alt="FLOOD LIGHTS" src={flimage}/>
                 <div className='title-card2'>FLOOD LIGHTS</div>
                 <button className='Shopnow'>SHOP NOW</button>
             </div></Link>
             <Link to="/panellights/" style={{'textDecoration':'inherit','color':'inherit'}}>
             <div className='card2'  data-aos="zoom-in-up">
-                <img alt="PANEL LIGHTS" src='https://www.jainsonslightsonline.com/image/cache/led-lights/crompton-led-lights/crompton-led-recessed-panel-star-cosmos-round-550x550.JPG'/>
+                <img alt="PANEL LIGHTS" src='https://5.imimg.com/data5/LL/SV/GLADMIN-3282119/led-panel-lights-500x500.png'/>
                 <div className='title-card2'>PANEL LIGHTS</div>
                 <button className='Shopnow'>SHOP NOW</button>
 
@@ -115,7 +117,7 @@ const Homepage = () => {
             <Link to="/streetlights/" style={{'textDecoration':'inherit','color':'inherit'}}>
             
             <div className='card2'  data-aos="zoom-in-up">
-                <img alt="PANEL LIGHTS" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNol937nD61Id3o6ww9EAFUiZraEtj3_s1Q&usqp=CAU'/>
+                <img alt="Streetlight LIGHTS" src={streetlights}/>
                
                 <div className='title-card2'>STREET LIGHTS</div>
                 <button className='Shopnow'>SHOP NOW</button>
@@ -124,7 +126,7 @@ const Homepage = () => {
             <Link to="/concealedlights/" style={{'textDecoration':'inherit','color':'inherit'}}>
            
             <div className='card2'  data-aos="zoom-in-up">
-                <img alt="Concealed lights" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AhttqfEUSW8efEVoMoztrav4SlUSMc2xeQ&usqp=CAU'/>
+                <img alt="Concealed lights" src='data:image/jpeg;base64,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'/>
                 <div className='title-card2'>CONCEALED LIGHTS</div>
                 <button className='Shopnow'>SHOP NOW</button>
 
