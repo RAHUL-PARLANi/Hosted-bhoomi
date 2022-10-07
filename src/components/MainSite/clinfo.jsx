@@ -16,6 +16,15 @@ function wtp(){
     window.location=window.location.href
     
 }
+function invite(){
+    window.open(
+        "whatsapp://send?text=Hi, Checkout this amazing Concealed Light of Bhoomi " + window.location.href,
+
+        // This is what makes it 
+        // open in a new window.
+        '_blank' )
+}
+    
 
 const DLinfo = () => {
     const [data,setData]=useState([]);
@@ -70,11 +79,11 @@ const DLinfo = () => {
                             <div className="li"><div className='tags'>Available :</div> {data.productAvailable}</div>
                             <div className="li"><div className='tags'>Likes :</div> {data.productWTP} <FontAwesomeIcon icon="fa-solid fa-heart" /></div>
                         </div>
-                    <div className='cta'><a href='https://wa.me/8770035694'><button style={{'backgroundColor':'white','color':'#7b283c'}}>CHAT WITH US</button></a><button onClick={() =>
+                    <div className='cta'><a href='https://wa.me/+918770035694'><button style={{'backgroundColor':'white','color':'#7b283c'}}>CHAT WITH US</button></a><button onClick={() =>
                         
                         addItem({ id: data._id, name: data.productProductCode, price: data.productRupees })
                       }
-        >ADD TO CART</button> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div className='button-icons'><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
+        >ADD TO CART</button> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div className='button-icons' onClick={()=>{invite()}} ><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
                     </div>
                     </div>
                     <div className='Key-valid'>
@@ -137,7 +146,6 @@ const DLinfo = () => {
                     )
                 
 }
-
 function imgChangerlite(value) {
     document.getElementById('MainImg').src=value
 }
