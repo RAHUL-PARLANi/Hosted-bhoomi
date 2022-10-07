@@ -51,7 +51,7 @@ const order=(e)=>{
       <>
       <Navbar/>
       <div id='pop' className='Succsessfull-message'>
-        <div >Your Order Has been Successfully been placed. Thanks for the ordering.
+        <div >Your Order Has been placed Successfully. Thanks for the ordering.
         Track Your order by id : {(cartTotal+totalUniqueItems+totalItems+sec)}
         </div>
         <div onClick={close}>

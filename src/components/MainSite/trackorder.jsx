@@ -18,6 +18,10 @@ const cancelcal=(id)=>{
       res=>{alert(res.data.Message)})
   }
 const View=()=>{
+  useEffect(() => {
+    window.scrollTo(0,0)
+  
+   }, [])
   
     return <>
             <div  className='Info' >
