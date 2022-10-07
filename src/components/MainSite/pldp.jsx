@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component } from 'react';
 import axios from "axios";
+import Helmet from 'react-helmet'
 import Navbar from './navbar';
 import energy from "../../images/download-removebg-preview.png"
 import saveenergy from "../../images/save_energy-removebg-preview.png"
@@ -28,6 +29,7 @@ function invite(){
 
 const Plinfo = () => {
     const [data,setData]=useState([]);
+    const [str,setstr] = useState('');
     const [data1,setData1]=useState([]);
     const { addItem, inCart, setCartMetadata } = useCart();
     useEffect(() => {
@@ -35,7 +37,7 @@ const Plinfo = () => {
                     .then(res => {
                         
                             setData(res.data)
-                         
+                            setstr(res.data.productProductCode)
                     })
                     .catch(function (error){
                         console.log(error);
@@ -55,6 +57,15 @@ const Plinfo = () => {
     
     return (
                     <>
+                     <Helmet>
+    <title>
+      {str} - BHOOMI E & D TRADING COMPANY
+    </title>
+    <meta
+       name="description"
+       content="Bhoomi E & D Trading Company Panel Light "
+     />
+  </Helmet>
                      <Navbar/>
                      
                     <div className='ProductView' >

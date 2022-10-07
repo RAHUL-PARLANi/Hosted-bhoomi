@@ -131,6 +131,7 @@ import Navbar from './navbar';
 import axios from "axios";
 import Footer from './footer';
 import AOS from 'aos'
+import Helmet from 'react-helmet'
 class WLlist extends Component {
     
   constructor(props) {
@@ -344,6 +345,13 @@ Namedec(){
 
   render() {
   return (<>
+  <Helmet>
+        <title>STREET LIGHTS COLLECTION - BHOOMI E & D TRADING COMPANY</title>
+        <meta
+       name="description"
+       content="Bhoomi E & D Trading Company Street Light Collection"
+     />
+      </Helmet>
     <Navbar/>
     <div className='Listproducts'>
     <input id='Searchbox' placeholder='Search by name' onChange={(e)=>{

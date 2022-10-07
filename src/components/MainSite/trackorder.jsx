@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from './footer'
+import Helmet from 'react-helmet'
 import Navbar from './navbar'
 import axios from 'axios'
 const Trackorder = () => {
@@ -62,6 +63,13 @@ const View=()=>{
 }
 
   return (<>
+    <Helmet>
+        <title>Track Order - Bhoomi E & D Trading Company</title>
+        <meta
+       name="description"
+       content="Bhoomi E & D Trading Company Order Tracking System"
+     />
+      </Helmet>
     <Navbar/>
     <div className='productfilter' >
                <div className="same tags option" >SEARCH BY ID :  <input  onChange={(e)=>{setinput(e.target.value)}} required style={{"border": "#7b283c solid 1px","backgroundColor": "#823f4f","borderRadius": "3px"}}/></div>

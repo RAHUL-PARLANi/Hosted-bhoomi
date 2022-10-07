@@ -28,6 +28,7 @@
     "react-bootstrap": "^2.4.0",
     "react-csv": "^2.2.2",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-js-table-with-csv-dl": "^0.9.7",
     "react-read-more-read-less": "^1.0.7",
     "react-responsive-carousel": "^3.2.23",

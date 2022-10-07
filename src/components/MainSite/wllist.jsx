@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from './navbar';
 import axios from "axios";
+import Helmet from "react-helmet"
 import Footer from './footer';
 import AOS from 'aos'
 class WLlist extends Component {
@@ -51,10 +52,10 @@ class WLlist extends Component {
           <div className='name'>{products.productProductCode}</div>
           <div className='product-price'><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" /> {products.productRupees}/-</div>
           <div className='tags'>Watts :</div><div className='tags-details'>{products.productWatt}</div>
-          <div className='tags'>Cut Out :</div><div className='tags-details'> {products.productCutOut}</div>
+          <div className='tags'>Type :</div><div className='tags-details'> {products.productType}</div>
           <div className='tags'>Dimensions :</div><div className='tags-details'> {products.productLength}mm by {products.productWidth}mm by {products.productHight}mm</div>
           </div>
-          <Link to={"/panellight/" + products._id} ><button className='view-more'>View More</button></Link>
+          <Link to={"/walllight/" + products._id} ><button className='view-more'>View More</button></Link>
           </div>
         </div>
    
@@ -80,10 +81,10 @@ class WLlist extends Component {
         <div className='name'>{products.productProductCode}</div>
         <div className='product-price'><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" /> {products.productRupees}/-</div>
         <div className='tags'>Watts :</div><div className='tags-details'>{products.productWatt}</div>
-        <div className='tags'>Cut Out :</div><div className='tags-details'> {products.productCutOut}</div>
+        <div className='tags'>Type :</div><div className='tags-details'> {products.productType}</div>
         <div className='tags'>Dimensions :</div><div className='tags-details'> {products.productLength}mm by {products.productWidth}mm by {products.productHight}mm</div>
         </div>
-        <Link to={"/panellight/" + products._id} ><button className='view-more'>View More</button></Link>
+        <Link to={"/walllight/" + products._id} ><button className='view-more'>View More</button></Link>
         </div>
       </div>
         </>
@@ -214,6 +215,13 @@ Namedec(){
 
   render() {
   return (<>
+    <Helmet>
+      <title>WALL LIGHTS COLLECTION - BHOOMI E & D TRADING COMPANY</title>
+      <meta
+     name="description"
+     content=""
+   />
+    </Helmet>
     <Navbar/>
     <div className='Listproducts'>
     <input id='Searchbox' placeholder='Search by name' onChange={(e)=>{

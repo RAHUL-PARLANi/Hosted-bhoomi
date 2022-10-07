@@ -1033,6 +1033,15 @@ td{
     height: 100vh;
     overflow-y: scroll;
 }
+.Contenthero{
+    font-size: 20px;
+    font-family: 'lato',sans-serif;
+    font-weight: 600;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .order-card-inter{
     display: flex;
@@ -1906,6 +1915,9 @@ justify-content: space-around;
 }
 #Searchbox{
     margin-top: 85px;
+}
+.Contenthero{
+    font-size: 15px;
 }
 
 }

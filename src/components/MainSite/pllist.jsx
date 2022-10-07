@@ -124,6 +124,7 @@ function closefilter1(params) {
 export default Pllist;
 */
 import React, { Component } from 'react';
+import Helmet from 'react-helmet'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from './navbar';
@@ -339,6 +340,15 @@ Namedec(){
 
   render() {
   return (<>
+  <Helmet>
+    <title>
+      PANEL LIGHTS COLLECTION - BHOOMI E & D TRADING COMPANY
+    </title>
+    <meta
+       name="description"
+       content="Bhoomi E & D Trading Company Panel Light Collection"
+     />
+  </Helmet>
     <Navbar/>
     <div className='Listproducts'>
     <input id='Searchbox' placeholder='Search by name' onChange={(e)=>{

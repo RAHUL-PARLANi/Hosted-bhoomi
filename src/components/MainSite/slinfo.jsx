@@ -175,6 +175,7 @@ export  class SLinfo extends Component {
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import React, { Component } from 'react';
  import axios from "axios";
+ import Helmet from 'react-helmet'
  import Navbar from './navbar';
  import energy from "../../images/download-removebg-preview.png"
  import saveenergy from "../../images/save_energy-removebg-preview.png"
@@ -228,6 +229,13 @@ function invite(){
      
      return (
                      <>
+                     <Helmet>
+        <title>{String(data.productModelNo)} - Bhoomi E & D Trading Company</title>
+        <meta
+       name="description"
+       content="Bhoomi E & D Trading Company Street Light"
+     />
+      </Helmet>
                       <Navbar/>
                       
                      <div className='ProductView' >

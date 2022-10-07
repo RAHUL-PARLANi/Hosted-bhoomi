@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
+import Helmet from 'react-helmet';
 import axios from "axios";
 import Navbar from './navbar';
 import energy from "../../images/download-removebg-preview.png"
@@ -55,6 +56,15 @@ const DLinfo = () => {
     
     return (
                     <>
+                    <Helmet>
+                        <title>
+                            {String(data.productProductCode)} - BHOOMI E & D TRADING COMPANY
+                        </title>
+                        <meta
+                       name="description"
+                       content="Bhoomi E & D Trading Company Concealed light"
+                     />
+                    </Helmet>
                      <Navbar/>
                      
                     <div className='ProductView' >

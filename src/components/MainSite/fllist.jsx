@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import Helmet from "react-helmet";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from './navbar';
 import axios from "axios";
@@ -214,6 +215,15 @@ Namedec(){
 
   render() {
   return (<>
+  <Helmet>
+    <title>
+      FLOOD LIGHTS COLLECTION - BHOOMI E & D TRADING COMPANY
+    </title>
+    <meta
+       name="description"
+       content="Bhoomi E & D Trading Company Flood Lights Collection"
+     />
+  </Helmet>
     <Navbar/>
     <div className='Listproducts'>
     <input id='Searchbox' placeholder='Search by name' onChange={(e)=>{

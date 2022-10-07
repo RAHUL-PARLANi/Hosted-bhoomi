@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Footer from './footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Helmet from 'react-helmet'
 import Navbar from './navbar'
 import { Carousel } from 'react-responsive-carousel';
 import Reviews from './reviews';
@@ -41,7 +43,14 @@ const Homepage = () => {
     }
     
   return (
-   <>  <Navbar/>
+   <> <Helmet>
+   <meta
+     name="description"
+     content="we “BHOOMI E & D TRADING COMPANY” is a Manufacturer of the wide spectrum Hanging Chandeliers,LED Lights,Gate Lights etc. We are manufacturing these products using premium grade raw material that is procured from the authentic vendors of the market. We offer these products at reasonable rates and deliver these within the promised time-frame."
+   />
+   <title>BHOOMI E & D TRADING COMPANY</title>
+   </Helmet> 
+      <Navbar/>
          <div className='pop'>
         <form className='Service-from' id='form-closed' data-aos="fade-down-right" data-aos-duration="800"   data-aos-easing="ease-in-back" onSubmit={handleSubmit} >
             <div style={{
@@ -72,6 +81,29 @@ const Homepage = () => {
         </div>
       </Carousel>
       </div>
+      <div className='heading3' data-aos="fade-down">
+      BHOOMI E & D TRADING COMPANY
+    </div>
+    <div className='Contenthero' data-aos="zoom-in-up">
+    At Bhoomi light, we offer wide range of LED lighting products. Our portfolio
+    A includes general lighting, commercial lighting, Industrial Lighting etc.
+    We truly believe in making environment friendly lighting solutions and have been
+    focused on latest technology & innovation for developing energy efficient
+    products.<br/>
+    <div className='heading2' style={{'color':'#7b283c'}}>
+        WHY US?
+    </div>
+    <FontAwesomeIcon icon="fa-solid fa-circle" /> We follow the principle of <b style={{'color':'#7b283c'}}>Make in India</b> and serve the nation by processing
+    most of the raw material available in India.<br/>
+    <FontAwesomeIcon icon="fa-solid fa-circle" /> <b style={{'color':'#7b283c'}}>Customer satisfaction</b> is our prime objective.<br/>
+    <FontAwesomeIcon icon="fa-solid fa-circle" /> <b style={{'color':'#7b283c'}}>Wide product range</b> available under one roof which helps in catering all kinds of
+    lighting requirements for our OEM buyers.<br/>
+    <FontAwesomeIcon icon="fa-solid fa-circle" /> We make <b style={{'color':'#7b283c'}}>energy efficient yet economical products</b> with the help of latest
+    technology & innovations.<br/>
+    <FontAwesomeIcon icon="fa-solid fa-circle" /> Our latest product range offers principle of ,<b style={{'color':'#7b283c'}}>“SAVE ENERGY-SAVE THE
+    ENVIRONMENT & ENHANCED VALUE FOR MONEY”.</b>
+
+    </div>
     <div className='box-bestsellers'  >
     <div className='heading3' data-aos="fade-down">
             OUR BEST SELLING PRODUCTS
