@@ -256,7 +256,7 @@ function invite(){
                          <div className='product-price'><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{data.productRupees}</div>
                          </div>
                          <div className='Key-points'>
-                             <div className="li"><div className='tags'>Material Used :</div> Aluminium</div>
+                             <div className="li"><div className='tags'>Category :</div>{data.productCategory}</div>
                              <div className="li"><div className='tags'>Available :</div> {data.productAvailable}</div>
                              <div className="li"><div className='tags'>Likes :</div> {data.productWTP} <FontAwesomeIcon icon="fa-solid fa-heart" /></div>
                          </div>

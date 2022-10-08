@@ -481,11 +481,7 @@ Namedec(){
     </Helmet>
     <Navbar/>
     <div className='Listproducts'>
-    <input id='Searchbox' placeholder='Search by name' onChange={(e)=>{
-                    this.setState({
-                        input:e.target.value
-                    })
-                }}/>
+   
       <div className='productfilter'>
         <div className='Sorter' style={{'display':'flex'}}>
             <div  className='same tags'>SORT : </div>
@@ -515,6 +511,11 @@ Namedec(){
         </div>
         <button className='clearfilter' onClick={()=>{this.clearfilter()}}>CLEAR FILTER</button>
       </div>
+      <input id='Searchbox' placeholder='Search by name' onChange={(e)=>{
+                    this.setState({
+                        input:e.target.value
+                    })
+                }}/>
       <div className='productsdisplay'>
             <div className='heading3'data-aos="fade-down" >{this.props.title}</div>
             <div className='all-p'>

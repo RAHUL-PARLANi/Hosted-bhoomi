@@ -20,10 +20,7 @@ function wtp(){
 
 function invite(){
     window.open(
-        "whatsapp://send?text=Hi, Checkout this amazing Panel Light of Bhoomi " + window.location.href,
-
-        // This is what makes it 
-        // open in a new window.
+        "whatsapp://send?text=Hi, Checkout this amazing Flood Light of Bhoomi " + window.location.href,
         '_blank' )
 }
 const FLinfo = () => {
@@ -82,7 +79,7 @@ const FLinfo = () => {
                         <div className='product-price'><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{data.productRupees}/-</div>
                         </div>
                         <div className='Key-points'>
-                            <div className="li"><div className='tags'>Material Used :</div> Aluminium</div>
+                            <div className="li"><div className='tags'>Category :</div> {data.productCategory}</div>
                             <div className="li"><div className='tags'>Available :</div> {data.productAvailable}</div>
                             <div className="li"><div className='tags'>Likes :</div> {data.productWTP} <FontAwesomeIcon icon="fa-solid fa-heart" /></div>
                         </div>
@@ -90,7 +87,7 @@ const FLinfo = () => {
                         
                         addItem({ id: data._id, name: data.productModelNo, price: data.productRupees })
                       }
-        >ADD TO CART</button> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div className='button-icons'><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
+        >ADD TO CART</button> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div onClick={()=>{invite()}} className='button-icons'><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
                     </div>
                     </div>
                     <div className='Key-valid'>

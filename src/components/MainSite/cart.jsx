@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { useCart } from "react-use-cart";
 import Navbar from './navbar';
 import Footer from './footer';
 const Cart = () => {
+useEffect(() => {
+  window.scrollTo(0,0)
+}, [])
+
 const {
     isEmpty,
     cartTotal,

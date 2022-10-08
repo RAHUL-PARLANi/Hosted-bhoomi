@@ -1607,6 +1607,7 @@ justify-content: space-around;
    background-color: white;
    width: 50px;
    height: 50px;
+   opacity: 0.6;
 }
 .Main-img img{
   border-radius: 10px;
@@ -1649,10 +1650,11 @@ justify-content: space-around;
     margin-top: 10px;
     border-radius: 10px;
     padding: 5px;
+    width: 275px;
     border: 1px solid #7b283c;
     background-color: white;
     color: black;
-    margin-left: -60px;
+    margin-left: -65px;
 }
 .li{
     display: flex;
@@ -1913,9 +1915,7 @@ justify-content: space-around;
 .productfilter input{
     width: 80%;
 }
-#Searchbox{
-    margin-top: 85px;
-}
+
 .Contenthero{
     font-size: 15px;
 }
