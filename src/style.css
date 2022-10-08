@@ -233,6 +233,15 @@ form{
     border: 1px solid white;
     margin-bottom: 5px;
     background-color: white;
+    opacity: 0.6;
+}
+.Main-img{
+    height: 400px;
+    width: 400px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://i.pinimg.com/originals/d4/2b/b2/d42bb2f00e1042c990b25f90ada9b0ab.gif');
 }
 .Main-img img{
   border-radius: 10px;
@@ -285,6 +294,7 @@ form{
 .tags{
     letter-spacing: 0.5px;
     font-weight: 600;
+    margin-right: 10px;
 }
 .tags-details{
     letter-spacing: 0.5px;
@@ -479,12 +489,14 @@ color: rgb(255,255,255);
     align-self: center;
     color: black;
     font-size: large;
+    cursor: pointer;
 }
 .button-icons-like{
     width: 50px;
     font-size: large;
     align-self: center;
     color: #7b283c;
+    cursor: pointer;
 }
 .Recommended-Products{
     margin-left: auto;
@@ -1609,6 +1621,14 @@ justify-content: space-around;
    height: 50px;
    opacity: 0.6;
 }
+.Main-img{
+    height: 300px;
+    width: 300px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://i.pinimg.com/originals/d4/2b/b2/d42bb2f00e1042c990b25f90ada9b0ab.gif');
+}
 .Main-img img{
   border-radius: 10px;
   border: 1px solid white;
@@ -1669,6 +1689,7 @@ justify-content: space-around;
     letter-spacing: 0.5px;
     font-weight: 600;
     font-size: medium;
+   
 }
 .tags-details{
     font-size: 12px;

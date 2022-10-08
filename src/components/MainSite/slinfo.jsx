@@ -260,11 +260,11 @@ function invite(){
                              <div className="li"><div className='tags'>Available :</div> {data.productAvailable}</div>
                              <div className="li"><div className='tags'>Likes :</div> {data.productWTP} <FontAwesomeIcon icon="fa-solid fa-heart" /></div>
                          </div>
-                     <div className='cta'><a href='https://wa.me/+918770035694'><button style={{'backgroundColor':'white','color':'#7b283c'}}>CHAT WITH US</button></a><button onClick={() =>
+                     <div className='cta'><button onClick={() =>
                          
                          addItem({ id: data._id, name: data.productModelNo, price: data.productRupees })
                        }
-         >ADD TO CART</button> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div className='button-icons' onClick={()=>{invite()}}><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
+         >ADD TO CART</button><div className='button-icons-like' ><a href='https://wa.me/+918770035694' style={{'color':'inherit'}}><FontAwesomeIcon icon="fa-solid fa-message" /></a></div> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div className='button-icons' onClick={()=>{invite()}}><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
                      </div>
                      </div>
                      <div className='Key-valid'>
