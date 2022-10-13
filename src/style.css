@@ -350,6 +350,19 @@ form{
     margin-top: 10px;
     border: 1px solid #7b283c;  
 }
+.labs{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    font-weight: 600;
+}
+.dtata{
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 0.3px;
+    padding: 5px;
+    font-weight: 500;
+     font-size: 17px;
+}
 .labels{
     font-weight: 700;
     font-size: 17px;
@@ -688,7 +701,7 @@ justify-content: space-around;
     justify-content: space-evenly;
 }
 .slide img{
-    height: 600px;
+    height: 400px;
 }
 .slideshow{
     margin-top: 2px;
@@ -935,8 +948,8 @@ td{
     
 }
 .Service-from{
-    width: 75%;
-    left: 13%;
+    width: 300px;
+    right: 0;
     background-color: #7b283c;
     color: white;
     text-align: center; 
@@ -951,10 +964,11 @@ td{
     justify-content: space-between;
 }
 .Tittle{
+    font-family: 'poppins',sans-serif;
     color: white;
-    font-size: 23px;
-    letter-spacing: -0.4px;
-    font-weight: 500;
+    font-size: 17px;
+    letter-spacing:0.8px;
+    font-weight: 600;
 }
 .form-box1 input ,.form-box1 textarea {
     width: 100%;
@@ -968,10 +982,10 @@ td{
     height: 160px;
 }
 .form-box1 label{
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 400;
     text-align: left;
-    letter-spacing: .1px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
 }
 .form-closed{
@@ -1024,7 +1038,10 @@ td{
     letter-spacing: 0.2px;
 }
 .check-out-form{
-    width: 100%;
+    width: 60%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: -10px;
 }
 #pop{
     text-align: center;
@@ -1046,13 +1063,18 @@ td{
     overflow-y: scroll;
 }
 .Contenthero{
-    font-size: 20px;
-    font-family: 'lato',sans-serif;
-    font-weight: 600;
-    text-align: left;
+    font-size: 17px;
+    font-family:'poppins',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    text-align: center;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+.whyus{
+    text-align: left;
 }
 
 .order-card-inter{
@@ -1070,7 +1092,7 @@ td{
     list-style-type:none;
     font-weight: 500;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
 }
 #table21{
     border: none;
@@ -1080,12 +1102,7 @@ td{
     display: flex;
     justify-content:space-around;
 }
-.dtata{
-    font-family: 'lato',sans-serif;
-    font-weight: 600;
-    font-size:medium;
-    letter-spacing: 0.5px;
-}
+
 .Info{
     display: flex;
     flex-direction: column;
@@ -1245,6 +1262,34 @@ td{
     border: #7b283c 2px solid;
     width: 40px;
     height: 50px;
+  }
+  .whyus{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .card3{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction:row;
+  }
+  .card3 img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .card3 .textarea{
+    padding: 10px;
+    width: 500px;
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    font-weight: 500;
   }
   #Searchbox{
     width: 300px;
@@ -1943,5 +1988,34 @@ justify-content: space-around;
 .productfilter{
     margin-top: 85px;
 }
+.check-out-form{
+    width: 100%;
+    }
+
+    .whyus{
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+      }
+      .card3{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row;
+      }
+      .card3 img{
+        height:150px;
+        width: 120px;
+        border-radius: 10px;
+      }
+      .card3 .textarea{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+      }
 
 }

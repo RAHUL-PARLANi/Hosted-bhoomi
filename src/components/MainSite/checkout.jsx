@@ -91,7 +91,7 @@ const order=(e)=>{
         ))}
       </tbody>
       </table>
-      <div className='heading2' style={{'fontSize':'15px','alignSelf':'flex-start',paddingLeft:'10px',color:'#7b283c'}}>TOTAL BILLING AMOUNT : <FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" /><u>{cartTotal}/-</u></div>
+      <div className='heading2' style={{'fontSize':'15px','alignSelf':'flex-start',paddingLeft:'10px',color:'#7b283c'}}>TOTAL BILLING AMOUNT : <b style={{'color':'black'}}><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{cartTotal}/-</b></div>
       <div className='heading2' style={{ 'marginTop':"-10px",'fontSize':'15px','alignSelf':'flex-start',paddingLeft:'10px',color:'#7b283c'}}>PAYMENT METHOD : PAY ON DELVERY</div>
        <form className='check-out-form' onSubmit={order}>
           <div className='check-out-box'>

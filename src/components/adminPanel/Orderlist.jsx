@@ -31,16 +31,16 @@ const cancelcal=(id)=>{
             <div className='order-card'>
             {data.map(elemt=>{
                 return <div className='order-card-inter' key={elemt._id}>
-                <li><div className='labels' style={{width:'45%'}}>Customer Name:</div><div className='dtata' style={{width:'45%'}}>{elemt.CustomerName}</div></li>
-                <li><div className="labels" style={{width:'45%'}}>Customer Address:</div><div className='dtata' style={{width:'45%'}}>{elemt.CustomerAddress}</div></li>
-                <li><div className="labels" style={{width:'45%'}}>Customer Phone Number:</div><div className='dtata' style={{width:'45%'}}>{elemt.CustomerNo}</div></li>
-                <li><div className="labels" style={{width:'45%'}}>Delivery Status :</div><div className='dtata' style={{width:'45%'}}>{elemt.DeliveryStatus}</div></li>
-                <li><div className='labels' style={{width:'45%'}}>Cancel: </div><div className='dtata' style={{width:'45%',color:'red'}}>{elemt.Cancel}</div></li>
-                <li><div className='labels' style={{width:'45%'}}>Total Billing Amount:</div><div className='dtata' style={{width:'45%',color:'green'}}><b>{elemt.totalBilling}/-</b></div></li>
-                <li><div className='labels' style={{width:'45%'}}>Unique Items: </div><div className='dtata' style={{width:'45%'}}>{elemt.totalUnique}</div></li>
-                <li><div className='labels' style={{width:'45%'}}>Total Items: </div><div className='dtata' style={{width:'45%'}}>{elemt.totalItem}</div></li>
-                <li><div className='labels' style={{width:'45%'}}>TrackingID: </div> <div className='dtata' style={{width:'45%'}}>{elemt.trackingID}</div></li>
-                <li><div className='labels' style={{width:'45%'}}>Order Timing: </div><div className='dtata' style={{width:'45%'}}>{elemt.date}</div></li>
+                <li><div className='labs' style={{width:'25%'}}>Customer Name</div><div className='dtata' style={{width:'45%'}}>: {elemt.CustomerName}</div></li>
+                <li><div className="labs" style={{width:'25%'}}>Customer Address</div><div className='dtata' style={{width:'45%'}}>: {elemt.CustomerAddress}</div></li>
+                <li><div className="labs" style={{width:'25%'}}>Customer Phone Number</div><div className='dtata' style={{width:'45%'}}>: {elemt.CustomerNo}</div></li>
+                <li><div className="labs" style={{width:'25%'}}>Delivery Status</div><div className='dtata' style={{width:'45%'}}>: {elemt.DeliveryStatus}</div></li>
+                <li><div className='labs' style={{width:'25%'}}>Cancel</div><div className='dtata' style={{width:'45%',color:'red'}}>: {elemt.Cancel}</div></li>
+                <li><div className='labs' style={{width:'25%'}}>Total Billing Amount</div><div className='dtata' style={{width:'45%',color:'green'}}>: <b>{elemt.totalBilling}/-</b></div></li>
+                <li><div className='labs' style={{width:'25%'}}>Unique Items</div><div className='dtata' style={{width:'45%'}}>: {elemt.totalUnique}</div></li>
+                <li><div className='labs' style={{width:'25%'}}>Total Items</div><div className='dtata' style={{width:'45%'}}>: {elemt.totalItem}</div></li>
+                <li><div className='labs' style={{width:'25%'}}>TrackingID</div> <div className='dtata' style={{width:'45%'}}>: {elemt.trackingID}</div></li>
+                <li><div className='labs' style={{width:'25%'}}>Order Timing</div><div className='dtata' style={{width:'45%'}}>: {elemt.date}</div></li>
                
                 <table style={{'marginTop':'20px'}}>
                 <thead>
@@ -66,8 +66,8 @@ const cancelcal=(id)=>{
                 </tbody>
             </table>
             <div className="buttonscta">
-            <button className='delete-button' onClick={()=>{deletecal(elemt._id)}}>Delete order</button>
-            <button className='delete-button' onClick={()=>{cancelcal(elemt._id)}}>Cancel order</button>
+            <button className='delete-button' onClick={()=>{deletecal(elemt._id)}}>Delete Order</button>
+            <button className='delete-button' onClick={()=>{cancelcal(elemt._id)}}>Cancel Order</button>
             <div>
             <select
                   type="text" 

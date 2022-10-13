@@ -105,7 +105,7 @@ const Plinfo = () => {
                     <div className='under-main'>
                     <div className='discription'>
                          <div className='Information-tag'>Description</div> <div className='label-content-para'>
-                         Bhoomi Lighting LED Floodlights not only ensure savings on initial capital, but also deliver a long-lasting performance. Versatile enough to be used in a variety of environments, our LED Flood Lights can be utilized well for lighting sports arenas, façades, general area lighting, billboards and other outdoor applications. When you choose LED floodlights from Bhoomi Lighting, you are selecting the world’s finest floodlighting luminaires.
+                         {data.productNote}
                          </div>
                          </div>
                         <div className='Information-tag'>Details</div>
