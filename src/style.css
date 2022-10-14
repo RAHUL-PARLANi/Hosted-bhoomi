@@ -1038,10 +1038,8 @@ td{
     letter-spacing: 0.2px;
 }
 .check-out-form{
-    width: 60%;
-    justify-self: flex-start;
-    align-self: flex-start;
-    margin-left: -10px;
+    width: 50%;
+    justify-self: center;
 }
 #pop{
     text-align: center;
