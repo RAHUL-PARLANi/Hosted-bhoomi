@@ -89,6 +89,38 @@ const Homepage = () => {
       </div>
     <div className='box-bestsellers'  >
     <div></div>
+    <div className='heading3' data-aos="fade-down">
+      BHOOMI E & D TRADING COMPANY
+    </div>
+    <div className='Contenthero' data-aos="zoom-in-up">
+    At Bhoomi light, gwalior, we offer wide range of LED lighting products. Our portfolio
+    A includes general lighting, commercial lighting, Industrial Lighting etc.
+    We truly believe in making environment friendly lighting solutions and have been
+    focused on latest technology & innovation for developing energy efficient
+    products.
+    <div className='heading2' style={{'textAlign':'center','color':'#7b283c'}}>
+        WHY US?
+    </div>
+    <div className="whyus">
+    <div className="card3">
+    <img src={mk} alt='mk'/>
+    <div className="textarea">We follow the principle of <b style={{'color':'#7b283c'}}>Make in India</b> and serve the nation by processing
+    most of the raw material available in India.</div></div>
+    <div className="card3" style={{'flexDirection':'row-reverse'}}>
+    <img src={cs} alt='cs'/>
+    <div className="textarea"><b style={{'color':'#7b283c'}}>Customer satisfaction</b> is our prime objective.</div></div>
+    
+    <div className="card3">
+    <img src={eef} alt='ss'/>
+    <div className="textarea">We make <b style={{'color':'#7b283c'}}>energy efficient yet economical products</b> with the help of latest
+    technology & innovations.</div></div>
+    <div className="card3" style={{'flexDirection':'row-reverse'}}>
+    <img src={save} alt='s'/>
+    <div className="textarea" >Our latest product range offers principle of ,<b style={{'color':'#7b283c'}}>“SAVE ENERGY-SAVE THE
+    ENVIRONMENT & ENHANCED VALUE FOR MONEY”.</b></div></div>
+    </div>
+    </div>
+   
     <div className='heading3'>
             OUR BEST SELLING PRODUCTS
     </div>
@@ -154,38 +186,7 @@ const Homepage = () => {
       </div>
         <Reviews/>
     </div>
-    <div className='heading3' data-aos="fade-down">
-      BHOOMI E & D TRADING COMPANY
-    </div>
-    <div className='Contenthero' data-aos="zoom-in-up">
-    At Bhoomi light, gwalior, we offer wide range of LED lighting products. Our portfolio
-    A includes general lighting, commercial lighting, Industrial Lighting etc.
-    We truly believe in making environment friendly lighting solutions and have been
-    focused on latest technology & innovation for developing energy efficient
-    products.
-    <div className='heading2' style={{'textAlign':'center','color':'#7b283c'}}>
-        WHY US?
-    </div>
-    <div className="whyus">
-    <div className="card3">
-    <img src={mk} alt='mk'/>
-    <div className="textarea">We follow the principle of <b style={{'color':'#7b283c'}}>Make in India</b> and serve the nation by processing
-    most of the raw material available in India.</div></div>
-    <div className="card3" style={{'flexDirection':'row-reverse'}}>
-    <img src={cs} alt='cs'/>
-    <div className="textarea"><b style={{'color':'#7b283c'}}>Customer satisfaction</b> is our prime objective.</div></div>
     
-    <div className="card3">
-    <img src={eef} alt='ss'/>
-    <div className="textarea">We make <b style={{'color':'#7b283c'}}>energy efficient yet economical products</b> with the help of latest
-    technology & innovations.</div></div>
-    <div className="card3" style={{'flexDirection':'row-reverse'}}>
-    <img src={save} alt='s'/>
-    <div className="textarea" >Our latest product range offers principle of ,<b style={{'color':'#7b283c'}}>“SAVE ENERGY-SAVE THE
-    ENVIRONMENT & ENHANCED VALUE FOR MONEY”.</b></div></div>
-    </div>
-    </div>
-   
     <Footer/>
     </>
   )
