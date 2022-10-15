@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className='NavBar-main'>
        <div className='news'> WELCOME TO BHOOMI EandD TRADING COMPANY'S OFFICIAL WEBSITE!</div>
        <div className='Navbar-logo'>
-        <div style={{'display':'flex','alignItems':'center'}}><div id='relo' onClick={()=>{open()}} style={{'border':'3px solid #7b283c','fontSize':'32px','width':'40px','height':'45px','color':"#7b283c",'marginLeft':'5px','textAlign':'center','borderRadius':'5px'}}><FontAwesomeIcon icon="fa-solid fa-bars" /></div><Link to='/'><img src={logo} alt="logo"/></Link></div>
+        <div style={{'display':'flex','alignItems':'center'}}><div id='relo' onClick={()=>{open()}} style={{'border':'3px solid #ffbd59','fontSize':'32px','width':'40px','height':'45px','color':"#ffbd59",'marginLeft':'5px','textAlign':'center','borderRadius':'5px'}}><FontAwesomeIcon icon="fa-solid fa-bars" /></div><Link to='/'><img src={logo} alt="logo"/></Link></div>
        <div className='icons' style={{color:"#ffbd59"}}>
        <Link to='/cart' style={{'textDecoration':'inherit','color':'inherit'}}><div className='cart-icon'><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /><div className='small-number'>{totalUniqueItems}</div></div></Link></div>
        </div>

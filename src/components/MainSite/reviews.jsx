@@ -24,7 +24,7 @@ const Reviews = () => {
                <div className='description-reviewer'>My Flood light was broken. I called the customer service and was connected to a real person within seconds. The lady Ruth on the phone was super nice and resolved the issue immediately. I received a replacement handle within 3 days! I couldn’t speak highly enough of my experience.</div><div className='name-reviewer'>-NEIL PATEL</div>
            </div>
            <div className='review-card'>
-               <div className='description-reviewer'>I cannot be more impressed than I have been in this Bhoomi concealed light I’ve received by Bhoomi in the last month. I had a problem with a bhoomi flood light as well as my wall light. Both coincidentally Bhoomi products. I received replacement parts on both occasions with a few days - really fantastic service. Bhoomi has become my first choice in electrical products from now on . Thankyou </div><div className='name-reviewer'>-RAHUL PARLANI</div>
+               <div className='description-reviewer'>I cannot be more impressed than I have been in this Bhoomi concealed light I’ve received by Bhoomi in the last month. I had a problem with a bhoomi flood light as well as my wall light. Both coincidentally Bhoomi products. I received replacement parts on both occasions with a few days - really fantastic service. Bhoomi has become my first choice in electrical products from now on . Thankyou </div><div className='name-reviewer'>-MANOJ</div>
            </div>
            <div className='review-card'>
                <div className='description-reviewer'>Bought Concealed light. Working like a charm</div><div className='name-reviewer'>-JOTI KUMAR</div>
