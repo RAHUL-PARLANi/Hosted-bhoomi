@@ -86,7 +86,7 @@ const WLinfo = () => {
                         <div className='Key-points'>
                             <div className="li"><div className='tags'>Category:</div> {data.productCategory}</div>
                             <div className="li"><div className='tags'>Available :</div> {data.productAvailable}</div>
-                            <div className="li"><div className='tags'>Likes :</div> {data.productWTP} <FontAwesomeIcon icon="fa-solid fa-heart" /></div>
+                            <div className="li"><div className='tags'>Likes :</div> {data.productWTP} </div>
                         </div>
                     <div className='cta'><button onClick={() =>
                         
@@ -95,11 +95,7 @@ const WLinfo = () => {
         >ADD TO CART</button><div className='button-icons-like' ><a href='https://wa.me/+918770035694' style={{'color':'inherit'}}><FontAwesomeIcon icon="fa-solid fa-message" /></a></div> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div className='button-icons' onClick={()=>{invite()}}><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
                     </div>
                     </div>
-                    <div className='Key-valid'>
-                         <div className='div'><img src={makeinindia} width='180px' height='100px' alt='Make in india'></img><div style={{color:'black',fontWeight:'bold'}}>Make in India</div></div>    
-                         <div className='div'><img src={energy} width='110px' height='95px' alt='Make in india'></img><div style={{color:'black',fontWeight:'bold'}}>Save Energy - Save Envirnoment</div></div>    
-                         <div className='div'><img src={saveenergy} width='120px' height='80px' alt='Make in india'></img><div style={{color:'black',fontWeight:'bold'}}>Energy Efficient</div></div>    
-                    </div>
+                   
                     <div className='under-main'>
                     <div className='discription'>
                          <div className='Information-tag'>Description</div> <div className='label-content-para'>
@@ -137,8 +133,9 @@ const WLinfo = () => {
                             <div className='product-price'><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" /> {elemet.productRupees}/-</div>
                             <div className='tags'>Watts :</div><div className='tags-details'> {elemet.productWatt}</div>
                             <div className='tags'>Dimensions :</div><div className='tags-details'> {elemet.productLength}mm by {elemet.productWidth}mm by {elemet.productHight}mm</div>
-                            </div>
                             <div className='tags'>Type :</div><div className='tags-details'> {elemet.productType}</div>
+                            </div>
+                            
                             <a href={'/panellight/'+elemet._id}><button className='view-more'>View More</button></a>
                             </div>
                                 

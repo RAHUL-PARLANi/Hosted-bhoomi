@@ -75,9 +75,11 @@ const View=()=>{
      />
       </Helmet>
     <Navbar/>
+    <div style={{'backgroundColor':'#ff1616','marginTop':'-20px','paddingTop':'20px'}}>
     <div className='productfilter' >
-               <div className="same tags option" >SEARCH BY ID :  <input  onChange={(e)=>{setinput(e.target.value)}} required style={{"border": "#7b283c solid 1px","backgroundColor": "#823f4f","borderRadius": "3px"}}/></div>
+               <div className="same tags option" >SEARCH BY ID :  <input  onChange={(e)=>{setinput(e.target.value)}} required style={{"border": "rgb(246, 155, 10) solid 1px","backgroundColor": "rgb(246, 155, 10)","borderRadius": "3px"}}/></div>
                <button onClick={()=>{submit()}} className='clearfilter'>TRACK ORDER</button>
+    </div>
     </div>
     <View/>   
     <Footer/>

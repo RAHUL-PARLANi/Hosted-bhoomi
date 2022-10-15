@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../images/logo1.png'
+import logo from '../../images/logo3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import FeedbackForm from './feedbackform'
@@ -44,7 +44,7 @@ const Footer = () => {
     <FontAwesomeIcon icon="fa-solid fa-copyright" /> BHOOMI EandD TRADING COMPANY 2022. ALL RIGHTS RESERVED.
     </div>
     <div className='creditME'>
-    Developed and Designed by <a style={{'textDecoration':'inherit','color':'white'}} href='https://www.linkedin.com/in/rahul-parlani-b02a0a226/'><b>Rahul Parlani</b></a> of ITM.
+    Developed and Designed by <a style={{'textDecoration':'inherit','color':'white'}} href='https://www.linkedin.com/in/rahul-parlani-b02a0a226/'><b style={{'color':'#ffbd59'}}>Rahul Parlani</b></a> of ITM.
     </div>
     </>
   )

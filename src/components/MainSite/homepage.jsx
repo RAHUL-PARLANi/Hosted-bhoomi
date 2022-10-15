@@ -17,6 +17,11 @@ import save from '../../images/saveenergy.jpg';
 import mk from '../../images/makeinindia.jpg';
 import eef from '../../images/energy-efficient.jpg';
 import cs from '../../images/customer-satisfaction.jpg';
+import s1 from '../../images/Screenshot (289).png';
+import s2 from '../../images/Screenshot (291).png';
+import s3 from '../../images/Screenshot (292).png';
+import s4 from '../../images/Screenshot (295).png';
+
 
 const Homepage = () => {
     const [index,setIndex]=useState(1)
@@ -73,17 +78,14 @@ const Homepage = () => {
       <div className='slideshow' >
       <Carousel autoPlay autoFocus useKeyboardArrows transitionTime={0}  showThumbs={false} showStatus={false} swipeable={true} dynamicHeight infiniteLoop  >
         <div className='slide'>
-            <img alt="" src="https://d1tlw8zlp8jxtb.cloudfront.net/pub/media/wysiwyg/wysiwyg/new1.jpg" />
+            <img alt="Bhoomi products" src={s4} />
         </div>
         <div className='slide'>
-            <img alt="" src="https://d1tlw8zlp8jxtb.cloudfront.net/pub/media/wysiwyg/wysiwyg/new2.jpg" />
+            <img alt="bhoomi lights gwalior" src={s2} />
         </div>
+       
         <div className='slide'>
-            <img alt="" src="https://d1tlw8zlp8jxtb.cloudfront.net/pub/media/wysiwyg/wysiwyg/new3.jpg" />
-        </div>
-        
-        <div className='slide'>
-            <img alt="" src="https://d1tlw8zlp8jxtb.cloudfront.net/pub/media/wysiwyg/wysiwyg/new4.jpg" />
+            <img alt="bhoomi" src={s1} />
         </div>
       </Carousel>
       </div>
@@ -98,25 +100,33 @@ const Homepage = () => {
     We truly believe in making environment friendly lighting solutions and have been
     focused on latest technology & innovation for developing energy efficient
     products.
-    <div className='heading2' style={{'textAlign':'center','color':'#7b283c'}}>
+    <div className='heading2' style={{'textAlign':'center','color':'#ffbd59'}}>
         WHY US?
     </div>
     <div className="whyus">
-    <div className="card3">
+    <div className="card3" 
+     
+     data-aos-easing="ease-in-out">
     <img src={mk} alt='mk'/>
-    <div className="textarea">We follow the principle of <b style={{'color':'#7b283c'}}>Make in India</b> and serve the nation by processing
+    <div className="textarea">We follow the principle of <b style={{'color':'white'}}>Make in India</b> and serve the nation by processing
     most of the raw material available in India.</div></div>
-    <div className="card3" style={{'flexDirection':'row-reverse'}}>
+    <div className="card3" 
+     
+     data-aos-easing="ease-in-out" style={{'flexDirection':'row-reverse'}}>
     <img src={cs} alt='cs'/>
-    <div className="textarea"><b style={{'color':'#7b283c'}}>Customer satisfaction</b> is our prime objective.</div></div>
+    <div className="textarea"><b style={{'color':'white'}}>Customer satisfaction</b> is our prime objective.</div></div>
     
-    <div className="card3">
+    <div className="card3" 
+     
+     data-aos-easing="ease-in-out">
     <img src={eef} alt='ss'/>
-    <div className="textarea">We make <b style={{'color':'#7b283c'}}>energy efficient yet economical products</b> with the help of latest
+    <div className="textarea">We make <b style={{'color':'white'}}>energy efficient yet economical products</b> with the help of latest
     technology & innovations.</div></div>
-    <div className="card3" style={{'flexDirection':'row-reverse'}}>
+    <div className="card3" 
+     
+     data-aos-easing="ease-in-out" style={{'flexDirection':'row-reverse'}}>
     <img src={save} alt='s'/>
-    <div className="textarea" >Our latest product range offers principle of ,<b style={{'color':'#7b283c'}}>“SAVE ENERGY-SAVE THE
+    <div className="textarea" >Our latest product range offers principle of ,<b style={{'color':'white'}}>“SAVE ENERGY-SAVE THE
     ENVIRONMENT & ENHANCED VALUE FOR MONEY”.</b></div></div>
     </div>
     </div>
@@ -124,7 +134,7 @@ const Homepage = () => {
     <div className='heading3'>
             OUR BEST SELLING PRODUCTS
     </div>
-    <div style={{'display':'flex','flexWrap':'wrap',justifyContent:'left',width:'90%',marginLeft:'auto',marginRight:'auto'}}>
+    <div style={{'display':'flex','flexWrap':'wrap',justifyContent:'left',width:'80%',marginLeft:'auto',marginRight:'auto'}}>
     <div className='heading2' data-aos="zoom-in">TOP THREE FLOOD LIGHTS</div>
     <Bestsellers title={'FLOOD LIGHTS'}  />
     <div className='heading2' data-aos="zoom-in">TOP THREE CONCEALED LIGHTS</div>
@@ -181,7 +191,7 @@ const Homepage = () => {
             </div></Link>
         </div>
       </div>
-      <div className='heading3' data-aos="fade-down">
+      <div className='heading3'style={{'backgroundColor':'#ff1616','color':'#ffbd59',marginTop:'-20px','paddingTop':'20px'}} >
             CUSTOMER REVIEWS
       </div>
         <Reviews/>

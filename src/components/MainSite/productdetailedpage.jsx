@@ -90,11 +90,7 @@ const FLinfo = () => {
         >ADD TO CART</button><div className='button-icons-like' ><a href='https://wa.me/+918770035694' style={{'color':'inherit'}}><FontAwesomeIcon icon="fa-solid fa-message" /></a></div> <div className='button-icons-like' onClick={wtp}><FontAwesomeIcon icon="fa-solid fa-heart" /></div><div onClick={()=>{invite()}} className='button-icons'><FontAwesomeIcon icon="fa-solid fa-share-nodes" /></div></div>
                     </div>
                     </div>
-                    <div className='Key-valid'>
-                         <div className='div'><img src={makeinindia} width='180px' height='100px' alt='Make in india'></img><div className='mi'  style={{color:'black',fontWeight:'bold'}}>Make in India</div></div>    
-                         <div className='div'><img src={energy} width='110px' height='95px' alt='Make in india'></img><div  className='mi'style={{color:'black',fontWeight:'bold'}}>Save Energy - Save Envirnoment</div></div>    
-                         <div className='div'><img src={saveenergy} width='120px' height='80px' alt='Make in india'></img><div  className='mi' style={{color:'black',fontWeight:'bold'}}>Energy Efficient</div></div>    
-                    </div>
+               
                     <div className='under-main'>
                     <div className='discription'>
                          <div className='Information-tag'>Description</div> <div className='label-content-para'>

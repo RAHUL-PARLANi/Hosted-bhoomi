@@ -20,7 +20,7 @@ const {
     metadata
   } = useCart();
 
-    if (isEmpty) return <><Navbar/><p className='os-title'>YOUR CART IS EMPTY, CHECK SOME AMAZING PRODUCTS <Link to='/'>HERE</Link></p></>
+    if (isEmpty) return <><Navbar/><p className='os-title'>YOUR CART IS EMPTY, CHECK SOME AMAZING PRODUCTS <Link to='/'>HERE</Link></p><Footer/></>
 
   return (
     <>
@@ -52,7 +52,7 @@ const {
       <tbody>
         {items.map((item) => (
           <tr key={item.id}>
-          <td style={{'color':'#7b283c', 'fontWeight':'600'}} >{item.name}</td>
+          <td style={{'color':'white', 'fontWeight':'600'}} >{item.name}</td>
           <td>{item.quantity}</td> 
           <td><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{item.price}</td>
           <td><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{item.quantity * item.price}</td>

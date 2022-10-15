@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo3.png';
 import threebar from '../../images/threebarimage.png'
 const Navbar = () => {
   const {totalUniqueItems}=useCart();
@@ -11,7 +11,7 @@ const Navbar = () => {
        <div className='news'> WELCOME TO BHOOMI EandD TRADING COMPANY'S OFFICIAL WEBSITE!</div>
        <div className='Navbar-logo'>
         <div style={{'display':'flex','alignItems':'center'}}><div id='relo' onClick={()=>{open()}} style={{'border':'3px solid #7b283c','fontSize':'32px','width':'40px','height':'45px','color':"#7b283c",'marginLeft':'5px','textAlign':'center','borderRadius':'5px'}}><FontAwesomeIcon icon="fa-solid fa-bars" /></div><Link to='/'><img src={logo} alt="logo"/></Link></div>
-       <div className='icons' style={{color:"#7b283c"}}>
+       <div className='icons' style={{color:"#ffbd59"}}>
        <Link to='/cart' style={{'textDecoration':'inherit','color':'inherit'}}><div className='cart-icon'><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /><div className='small-number'>{totalUniqueItems}</div></div></Link></div>
        </div>
        <div className='opening-navbar' id='relo1'>
@@ -45,7 +45,7 @@ const Navbar = () => {
         <Link to='/walllights/' style={{'textDecoration':'inherit','width':'200px'}}><div className='Navbar-content'>WALL LIGHTS</div></Link>
         <Link to='/streetlights/' style={{'textDecoration':'inherit','width':'200px'}}><div className='Navbar-content'>STREET LIGHTS</div></Link>
         <Link to='/concealedlights/' style={{'textDecoration':'inherit','width':'200px'}}><div className='Navbar-content'>CONCEALED LIGHTS</div></Link>
-        <Link to='/trackorder/' style={{'textDecoration':'inherit','width':'200px'}}><div className='Navbar-content' style={{color:"#7b283c",fontWeight:"600"}}>TRACK ORDER</div></Link>
+        <Link to='/trackorder/' style={{'textDecoration':'inherit','width':'200px'}}><div className='Navbar-content' style={{color:"#ffbd57",fontWeight:"600"}}>TRACK ORDER</div></Link>
         </div>
        </div>
     </div>

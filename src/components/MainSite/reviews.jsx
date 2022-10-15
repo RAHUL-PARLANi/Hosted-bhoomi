@@ -13,6 +13,7 @@ const Reviews = () => {
 , [])
   return (
     <>
+    <div style={{'display':'flex',justifyContent:'center','paddingBottom':'20px','backgroundColor':'#ff1616','marginTop':'-20px',paddingTop:'20px'}}>
     <div className='box-t' data-aos="zoom-in-up">
       
       <div className='left'>
@@ -33,6 +34,7 @@ const Reviews = () => {
            </div>
            </Carousel>
            </div>
+    </div>
     </div>
     </>
   )

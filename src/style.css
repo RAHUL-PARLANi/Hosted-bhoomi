@@ -224,13 +224,13 @@ form{
     justify-content: space-evenly;
 }
 .ProductView{
-    background-color: white;
+    background-color:#ff1616;
     height: 100%;
     padding-top: 10px;
    }
 .mini-image{
     border-radius: 5px;
-    border: 1px solid white;
+  
     margin-bottom: 5px;
     background-color: white;
     opacity: 0.6;
@@ -245,7 +245,7 @@ form{
 }
 .Main-img img{
   border-radius: 10px;
-  border: 1px solid white;
+  
   background-color: white;
 }
 .Upper-part{
@@ -258,7 +258,7 @@ form{
    letter-spacing: 0; 
    font-style: normal;
    font-weight: 500;
-   color: #7b283c;
+   color:#ffbd59;
 }
 .product-price{
     font-family: 'Lato', sans-serif;
@@ -268,20 +268,18 @@ form{
     letter-spacing: 0.2px;
     font-style: normal;
     font-weight: 500;
-    
-    
+    color: white;
 }
 .main-points{
     border-radius: 10px;
-    border: 1px solid white;
+    
     color: black;
 }
 .Key-points{
     margin-top: 10px;
     border-radius: 10px;
-    border: 1px solid white;
-    background-color: white;
-    color: black;
+    
+    color: white;
 }
 .li{
     display: flex;
@@ -304,7 +302,7 @@ form{
     font-size: 25px;
     font-weight: 600;
     width: 100px;
-    color: #7b283c;
+    color: white;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -320,7 +318,7 @@ form{
 }
 .Detail-part{
     width: 40.4%;
-    
+    margin-left: 10px;
     align-self: center;
 }
 .discription{
@@ -339,16 +337,16 @@ form{
     
 }
 .under-main{
-    background-color: white;
+    background-color: #ffbd59;
     padding: 20px;
     display: flex;
     flex-direction: column;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    
     margin-top: 10px;
-    border: 1px solid #7b283c;  
+    border: 5px solid rgb(246, 155, 10);  
 }
 .labs{
     font-size: 16px;
@@ -382,9 +380,9 @@ form{
     font-style: normal;
     font-weight: 500;
     width: 300px;
-    background-color: #7b283c;
+    background-color: #ffbd59;
     color: white;
-    border: 2px solid #7b283c;
+    border: 2px solid #ffbd59;
     margin-right: 10px;
     height: 50px;
     border-radius: 10px;
@@ -392,7 +390,7 @@ form{
 }
 .cta button:hover{
     background-color: white;
-    color: #7b283c;
+    color: #ffbd59;
     font-weight: 500;
 }
 .cta{
@@ -405,14 +403,18 @@ form{
 
 .card1{
     display: flex;
-    width: 376px;
-    height: 260px;
+    width: 396px;
+    background-color: #ffbd59;
+    border: 10px solid rgb(246, 155, 10);
+    padding: 5px;
+    height: 290px;
     margin-bottom: 20px;
     margin-right: 20px;
     justify-content: space-evenly;
     }
 .image-card{
     top: 0;
+    align-self: center;
     position: relative;
 }
 .topMark{
@@ -423,7 +425,7 @@ form{
     border-top-left-radius: 5px;
     border-bottom-right-radius: 50px;
     padding: 5px;
-    background-color: #7b283c;
+    background-color: rgb(246, 155, 10);
     color: white;
 }
 .image-card img{
@@ -440,18 +442,18 @@ form{
     flex-direction: column;
     width: 156px;
     justify-content: space-between;
-    
+    color:black        
 }
 .NavBar-main{
     display: flex;
     position: relative;
     z-index: 3;
     flex-direction: column;
-    background: #ffffff;
+    background: #ff1616;
 }
 .UnderNavbar{
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid #ff1616;
+    border-bottom: 1px solid #ff1616;
     
 }
 .under-content{
@@ -469,13 +471,13 @@ form{
     letter-spacing: 1.4px;
     font-style: normal;
     font-weight: 400;
-    color: black;
+    color:white;
 }
 Link:visited , .Navbar-content:hover{
-    color: #7b283c;
+    color: black;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: #7b283c 2px solid ;
+    
 }
 
 .Navbar-logo{
@@ -489,18 +491,18 @@ align-items: center;
 .news{
 padding: 6px;
 text-align: center;
-background-color: #7b283c;
+background-color:#ffbd59;
 font-family: 'Poppins',sans-serif ;
 font-size: 10px;
 letter-spacing: 0.5px;
 font-style: normal;
 font-weight: 600;
-color: rgb(255,255,255);
+color:  white;
 }
 .button-icons{
     width: 50px;
     align-self: center;
-    color: black;
+    color: #ffbd59;
     font-size: large;
     cursor: pointer;
 }
@@ -508,7 +510,7 @@ color: rgb(255,255,255);
     width: 50px;
     font-size: large;
     align-self: center;
-    color: #7b283c;
+    color: #ffbd59;
     cursor: pointer;
 }
 .Recommended-Products{
@@ -525,9 +527,9 @@ color: rgb(255,255,255);
     margin-top: 30px;
     background-color: white;
     z-index: 2;
-    border-left: 2px solid #7b283c;
-    border-right: 2px solid #7b283c;
-    border-top:  2px solid #7b283c;
+    border-left: 2px solid #ffbd59;
+    border-right: 2px solid #ffbd59;
+    border-top:  2px solid #ffbd59;
     border-radius: 5px;
     font-weight: 600;
 }
@@ -545,7 +547,7 @@ color: rgb(255,255,255);
     letter-spacing: 0.5px;
     font-style: normal;
     font-weight: 600;
-
+    color:white
 }
 .icons{
     align-self: center;
@@ -557,17 +559,22 @@ color: rgb(255,255,255);
 .view-more{
     
     border-radius: 5px;
-    color: white;
-    background-color: #7b283c;
+    color: rgb(246, 155, 10);
+    background-color: white;
     font-weight: 600;
     border: none;
     padding: 4px;
-    border: 1px solid #7b283c;
+    align-self: center;
     width:100px;
     
 }
+.shopbycategory{
+    background-color: #ff1616;
+    margin-top: -20px;
+    padding-top: 20px;
+}
 .name{
-    color: #7b283c;
+    color: black;
     font-weight: 600;
     font-size: 18px;
 }
@@ -587,11 +594,11 @@ color: rgb(255,255,255);
     height: 120px;
 }
 .footer{
-    margin-top: 20px;
+  
     padding: 10px;
     color: white;
     font-family: 'poppins',sans-serif;
-    background-color: #7b283c;
+    background-color: #ff1616;
 }
 .underFooter{
 display: flex;
@@ -606,25 +613,29 @@ justify-content: space-around;
 .form{
     margin-top: -10px;
     margin-left: -10px;
-    background-color: #7b283c;
+    background-color: #ff1616;
 }
 .form label{
     font-weight: 500;
 }
 .form input ,.form textarea{
-    border: #7b283c solid 1px;
-    background-color: #823f4f;
+    margin-bottom: 10px;
+    margin-top: -2px;
+    BORDER:NONE;
+    background-color:#cb0303;
     border-radius: 3px;
     width: 180PX;
+    color: white;
 }
 .button-form{
-    background-color: white;
-    border: 1px solid #7b283c;
+    background-color: #ffbd59;
+    border: none;
     border-radius: 5px;
-    color: #7b283c;
+    color: white;
     font-weight: 600;
 }
 .title{
+    color: #ffbd59;
     margin-top: 20px;
     font-weight: 700;
     font-size:medium;
@@ -644,8 +655,8 @@ justify-content: space-around;
     letter-spacing: 0;
     font-style: normal;
     font-weight: 400;
-    
-    color: black;
+    background-color: #ffbd59;
+    color: white;
     text-align: center;
 }
 .creditME{
@@ -657,19 +668,21 @@ justify-content: space-around;
     text-align: center;
     color: white;
     padding: 5px;
-    background-color: #7b283c;
+    background-color: #ff1616;
 }
 .footerimg{
     width: 100%;
     height: 200px;
+    border-top: 2px solid #ffbd59;
     background-repeat: repeat-x;
     background-size:contain;
     background-position: center;
     background-image: url('../src/images/footer.png');
-    background-color: #7b283c;
+    background-color: #ff1616;
     background-position:0 0 5px;
 }
 .Listproducts{
+    background-color: #ff1616;
     display: flex;
     flex-direction: column;
 }
@@ -677,7 +690,7 @@ justify-content: space-around;
 .productfilter{
     display: flex;
     margin-top: 20px;
-    background-color: #7b283c;
+    background-color: #ffbd59;
     color: white;
     padding: 10px;
     width: 600px;
@@ -704,7 +717,7 @@ justify-content: space-around;
     height: 400px;
 }
 .slideshow{
-    margin-top: 2px;
+    margin-top: 0px;
 }
 .all-p1{
     display: flex;
@@ -728,9 +741,10 @@ justify-content: space-around;
 .card2 img{
     height: 400px;
     width: 400px;
-    border: #fcdee5 solid 2px;
+    border: #ffbd59 solid 5px;
 }
 .card2 .title-card2{
+    color: white;
     text-align: center;
     font-size: x-large;
     font-weight: 600;
@@ -743,21 +757,21 @@ justify-content: space-around;
     font-weight: 700;
     letter-spacing: -0.2px;
     font-family: 'poppins',sans-serif;
-    color: #7b283c;
+    color: #ffbd59;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .Shopnow{
-    border: #7b283c 1px solid;
+    border: none;
     border-radius: 5px;
-    background-color: #7b283c;
+    background-color: #ffbd59;
     color: white;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 600;
-    width: 100px;
+    min-width: 100px;
     margin-top: 10px;
  }
  .review-card{
@@ -770,7 +784,7 @@ justify-content: space-around;
  }
  .description-reviewer{
     font-size: 15px;
-    color: black;
+    color: white;
     font-family: 'poppins',sans-serif;
     font-style: italic;
     font-weight: 600;
@@ -786,7 +800,7 @@ justify-content: space-around;
  }
  .name-reviewer{
     text-align: right;
-    color: black;
+    color: white;
     font-size: 20px;
     font-family: 'poppins',sans-serif;
     letter-spacing: 0.2px;
@@ -794,17 +808,15 @@ justify-content: space-around;
 
  }
  .box-t{
-   width: 95%;
    display: flex;
    height: 450px;
-   margin-left: auto;
-   margin-right: auto;
+   width: 95%;
    justify-content: space-around;
    border-radius: 20px;
-   border: #7b283c solid 10px;
+   border: white solid 10px;
 }
  .left img{
-    border: #7b283c solid 5px;
+    border: white solid 5px;
     height:280px;
     width:280px;
     border-radius: 50%;
@@ -817,16 +829,19 @@ justify-content: space-around;
     width: 60%;
 }
 .box-bestsellers{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    background-color: #ff1616;
 }
 .clearfilter{
     background-color: white;
-    color:#7b283c;
+    color:rgb(246, 155, 10);
     font-weight: 700;
     border-radius: 10px;
-    border: 5px solid #7b283c;
+    border: 5px solid rgb(246, 155, 10);
 }
 select , option {
     margin-top: auto;
@@ -835,6 +850,12 @@ select , option {
     height: 30px;
     border-radius: 10px;
     font-weight: 500;
+}
+#mchecker{
+    margin-top: -20px;
+    padding-top: 20px;
+    background-color: #ff1616;
+    padding-bottom: 20px;
 }
 .title-content:hover{
     font-weight: 600;
@@ -848,10 +869,11 @@ select , option {
     position: absolute;
     margin-left: 26px;
     margin-top: -10px;
-    color: white;
-    background-color: #7b283c;
+    color: #ffbd59;
+    background-color: white;
     border-radius: 50%;
     width: 15px;
+    font-weight: 900;
     text-align: center;
 }
 .order-summary{
@@ -860,7 +882,7 @@ select , option {
     flex-direction: column;
 }
 .sb{
-    border-bottom: 1px solid #823f4f;
+    border-bottom: 1px solid white;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 25px;
@@ -869,30 +891,33 @@ select , option {
     justify-content: space-between;
 }
 .os-title{
-    color: #823f4f;
+    color:white;
+    background-color: #ff1616;
     padding-left: 10px;
     padding-bottom: 5px;
     font-weight: 600;
     padding-top: 20px;
+    margin-bottom: -20px;
     padding-bottom: 20px;
     font-size: larger;
-    border-bottom: #823f4f 2px solid;
+    border-bottom: white 2px solid;
 }
 .sb-total{
     font-family: 'poppins',sans-serif;
     font-weight: 600;
+    color: white;
 }
 .sb-rupee{
     font-family: 'poppins',sans-serif;
     font-weight: 600;
-    
+    color: white;
 }
 .update-button{
     width: 25px;
     height: 25px;
-    border: #7b283c solid 2px;
+    border:none;
     border-radius: 8px;
-    color: #7b283c;
+    color:rgb(246, 155, 10);
     padding-top: 0px;
     background-color: white;
     margin: 5px;
@@ -903,31 +928,32 @@ thead{
     letter-spacing: 0.3px;
 }
 .table99 tbody{
-    border: 1px solid #7b283c;
+    border: 1px solid #ffbd59;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.3px;
 }
-th{
+.table99 th{
+    color: #ffbd59;
     font-weight: 600;
 }
-td{
+.table99 td{ color: white;
     padding: 10px;
 }
 .cta-buttons{
     background-color: white;
     border-radius: 10px;
-    border: #7b283c 2px solid;
-    color: #7b283c;
+    border: rgb(246, 155, 10) 2px solid;
+    color: rgb(246, 155, 10);
     font-weight: 600;
     padding: 5px;
 }
 
 .cta-buttons-1{
-    background-color: #7b283c;
+    background-color: rgb(246, 155, 10);
     border-radius: 10px;
-    border: #7b283c 2px solid;
+    border: rgb(246, 155, 10) 2px solid;
     color: white;
     font-weight: 600;
     padding: 5px;
@@ -950,7 +976,8 @@ td{
 .Service-from{
     width: 300px;
     right: 0;
-    background-color: #7b283c;
+    border:10px solid rgb(246, 155, 10);
+    background-color: #ffbd59;
     color: white;
     text-align: center; 
     position: absolute;
@@ -972,9 +999,10 @@ td{
 }
 .form-box1 input ,.form-box1 textarea {
     width: 100%;
-    background-color: #823f4f;
+
+    background-color: rgb(246, 155, 10);
     border-radius: 5px;
-    border: #7b283c 2px solid;
+    border: rgb(246, 155, 10) 2px solid;
     margin-bottom: 10px;
     height: 35px;
 }
@@ -997,7 +1025,7 @@ td{
  padding-bottom: 30px;
  margin-left: auto;
  margin-right: auto;
- border: 1px solid #7b283c;
+ border: 1px solid #ffbd59;
  display: flex;
  flex-direction: column;
  align-items: center;    
@@ -1009,13 +1037,13 @@ td{
     
 }
 .check-out-box input , .check-out-box textarea{
-    border: #7b283c 1px solid;
+    border: #ffbd59 3px solid;
     border-radius: 2px;
     padding: 5px;
     background-color: white;
 }
 .check-out-box input:hover , .check-out-box textarea:hover {
-    border: #7b283c 1px solid;
+    border: #ffbd59 3px solid;
     border-radius: 2px;
     padding: 5px;
     color: #7b283c;
@@ -1025,7 +1053,7 @@ td{
     margin-bottom: 3px;
     margin-top: 15px;
     text-align: left;
-    color: rgb(55, 46, 46);
+    color: white;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.1px;
@@ -1039,18 +1067,20 @@ td{
 }
 .check-out-form{
     width: 50%;
+    background-color: #ff1616;
     justify-self: center;
 }
 #pop{
     text-align: center;
     padding: 10px;
     font-weight: 600;
-    background-color: #7b283c;
+    background-color: #ffbd59;
     color: white;
     width: 100%;
     display: none;
     
 }
+
 .orderlist{
     background-color: whitesmoke;
     padding-left: 350px;
@@ -1061,9 +1091,10 @@ td{
     overflow-y: scroll;
 }
 .Contenthero{
+    color: white;
     font-size: 17px;
     font-family:'poppins',sans-serif;
-    text-transform: uppercase;
+    text-transform:capitalize;
     letter-spacing: 0.3px;
     font-weight: 500;
     text-align: center;
@@ -1106,6 +1137,7 @@ td{
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
+    background-color: #ff1616;
 }
 .boxer{
     display: flex;
@@ -1117,23 +1149,24 @@ td{
     margin-top: 10px;
     font-size: large;
     font-weight: 600;
+    color: white;
 }
 .info-main-data{
-    color: #7b283c;
+    color: #ffbd59;
     width: 300px;
     margin-top: 10px;
     font-weight: 600;
     font-size: large;
 }
 .info-label{
-    
+    color:#ffbd59;
     width: 300px;
-    color: #7b283c;
     font-weight: 600;
     font-size: medium;
     margin-top: 10px;
 }
 .info-data{
+    color: white;
     margin-top: 10px;
     font-weight: 600;
     width: 300px;   
@@ -1196,7 +1229,7 @@ td{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background:#7b283c;
+    background:#ffbd59;
     max-width: 5px; 
     border-radius: 10px;
   }
@@ -1264,12 +1297,16 @@ td{
   .whyus{
     display: flex;
     padding: 10px;
+    align-items: center;
     flex-direction: column;
   }
   .card3{
+    background-color: #ffbd59;
+    border: rgb(246, 155, 10) solid 10px;
     margin: 10px;
     padding: 10px;
     display: flex;
+    width: 800px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -1293,7 +1330,8 @@ td{
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    border: #7b283c 4px solid;
+    background-color: white;
+    border: rgb(246, 155, 10) 4px solid;
     border-radius: 10px;
     height: 35px;
     margin-top: 10px;
