@@ -967,7 +967,7 @@ thead{
     padding: 10px;
     right: auto;
     text-align: center;
-    background-color: #7b283c;
+    background-color:  #ffbd59;
     color: white;
     font-weight: 600;
     border-radius: 10px;
@@ -1770,7 +1770,7 @@ justify-content: space-around;
     font-size: 25px;
     font-weight: 600;
     width: 100px;
-    color: #7b283c;
+    
     border-radius: 5px;
     margin-top: 10px;
 }
