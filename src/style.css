@@ -1,4 +1,32 @@
 /*ADMIN NAV BAR STARTS*/
+.admin-imagechoosing{
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.admin-imagechoosing input{
+    width: 33%;
+    border: none;
+    margin-right: 20px;
+}
+
+.admin-imagechoosing button{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.diplay{
+    width: 100px;
+    color: #7b283c;
+}
+
 .NavbarAdmin{
     height: 90vh;
     width: 325px;

@@ -17,6 +17,9 @@ export function withRouter(Children){
         super();
         this.state = {
            message:"",
+           Image:'',
+           Image2:'',
+           Image3:'',
            productModelNo:"",
            productWatt:"",
            productWeight:"",
@@ -116,12 +119,77 @@ export function withRouter(Children){
             alert("Product Edited!");
         
     }
+    uploadImage(){
+        console.log('I am hit');
+        const data = new FormData()
+        data.append("file", this.state.Image)
+        data.append("upload_preset", "bhoomi")
+        data.append("cloud_name","defonzszt")
+        fetch("https://api.cloudinary.com/v1_1/defonzszt/image/upload",{
+        method:"post",
+        body:data
+        })
+        .then(resp => resp.json())
+        .then(data => {
+        console.log(data.url)
+        this.setState({productImage:data.url})
+        })
+        .catch(err => console.log(err))
+    }
+    uploadImage2(){
+        console.log('I am hit');
+        const data = new FormData()
+        data.append("file", this.state.Image2)
+        data.append("upload_preset", "bhoomi")
+        data.append("cloud_name","defonzszt")
+        fetch("https://api.cloudinary.com/v1_1/defonzszt/image/upload",{
+        method:"post",
+        body:data
+        })
+        .then(resp => resp.json())
+        .then(data => {
+        console.log(data.url)
+        this.setState({productImage2:data.url})
+        })
+        .catch(err => console.log(err))
+    }
+    uploadImage3(){
+        console.log('I am hit');
+        const data = new FormData()
+        data.append("file", this.state.Image3)
+        data.append("upload_preset", "bhoomi")
+        data.append("cloud_name","defonzszt")
+        fetch("https://api.cloudinary.com/v1_1/defonzszt/image/upload",{
+        method:"post",
+        body:data
+        })
+        .then(resp => resp.json())
+        .then(data => {
+        console.log(data.url)
+        this.setState({productImage3:data.url})
+        })
+        .catch(err => console.log(err))
+    }
+    
+   
     
     render() { 
         return (
             <div><Navbar/>
             <div className="admin-form-container">
                 <div className='Title-homepage'>Edit this Street Light</div>
+                <div className='admin-imagechoosing'>
+                Main Image
+                <input  type="file" onChange= {(e)=> this.setState({Image:e.target.files[0]})}></input>
+                <button onClick={()=>{this.uploadImage()}}>Save</button>
+                Side Image 1
+                <input  type="file" onChange= {(e)=> this.setState({Image2:e.target.files[0]})}></input>
+                <button  onClick={()=>{this.uploadImage2()}}>Save</button>
+                Side Image 2
+                <input  type="file" onChange= {(e)=> this.setState({Image3:e.target.files[0]})}></input>
+                <button onClick={()=>{this.uploadImage3()}}>Save</button>
+                </div>
+              
                 <form onSubmit={this.onSubmit}>
                     <div className='not-main-form'>
                     <div className='form-left-half'>
