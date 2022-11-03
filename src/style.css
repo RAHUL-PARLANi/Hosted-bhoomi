@@ -1309,7 +1309,7 @@ thead{
     padding: 10px;
     height: 100vh;
     position: fixed;
-    background-color: #ff1616;
+    background-color: white;
     z-index: 2;
     width: 100%;
     overflow-y: scroll;
@@ -1320,9 +1320,9 @@ thead{
     transition-timing-function: ease-in-out;
 }
   .mbar-name{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     padding-left: 10px;
-    color: white;
+    color: black;
     font-weight: 500;
     padding-bottom: 3px;
     padding-top: 5px;
@@ -1332,9 +1332,9 @@ thead{
     margin-bottom: 10px;
     text-align: center;    
     border-radius: 5px;
-    color: #ffbd59;
+    color:black;
     font-size: 37px;
-    border: #ffbd59 2px solid;
+    border: black 2px solid;
     width: 40px;
     height: 50px;
   }
@@ -1401,7 +1401,6 @@ thead{
         position: fixed;
         top: 0px;
         width: 100%;
-        border-bottom: #ff1616 2px solid;
     }
     .Navbar-logo{
         display: flex;
@@ -1533,6 +1532,7 @@ thead{
     .card2{
         height:max-content;
         width: 145px;
+        padding-bottom: 10px;
         margin-left:5px;
         margin-right: 5px;
         margin-top: 5px;
@@ -1544,7 +1544,6 @@ thead{
     .card2 img{
         height: 145px;
         width: 144px;
-        border: #fcdee5 solid 2px;
     }
     .card2 .title-card2{
         text-align: center;
@@ -1968,7 +1967,7 @@ justify-content: space-around;
     padding: 10px;
     right: 10%;
     text-align: center;
-    background-color: #ffbd59;
+    
     color: white;
     font-weight: 600;
     border-radius: 10px;
@@ -1987,7 +1986,7 @@ justify-content: space-around;
 }
 .slideshow,#mchecker 
 ,.ProductView{
-    margin-top: 85px;
+    margin-top: 95px;
 }
 .pop{
     width:100%;
@@ -2018,6 +2017,10 @@ justify-content: space-around;
     margin-top: 10px;
     font-weight: 600;
     font-size: large;
+}
+.Listproducts img{
+    height: 200px;
+    margin-top: 90px;
 }
 .info-label{
     
