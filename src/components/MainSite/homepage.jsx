@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Reviews from './reviews';
 import Bestsellers from './bestsellers';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo1.png'
+import logo from '../../images/logo.png'
 import { useState } from 'react';
 import axios from "axios"
 import AOS from "aos";
@@ -65,7 +65,7 @@ const Homepage = () => {
          <div className='pop'>
         <form className='Service-from' id='form-closed' data-aos="fade-left" data-aos-duration="800"   data-aos-easing="ease-in-back" onSubmit={handleSubmit} >
             <div style={{
-            right:'20px','position':'absolute','fontSize':'25px','cursor':'pointer'}} onClick={()=>{jh()}}>&times;</div>
+            right:'20px',color:'#d92126','position':'absolute','fontSize':'25px','cursor':'pointer'}} onClick={()=>{jh()}}>&times;</div>
             <img src={logo} alt='logo'/>
             <div className='Tittle' >WANT OUR SERVICES FILL THE FORM ?</div>
             <div className='form-box1'><label>Name :</label><input value={name} required onChange={(e)=>{setname(e.target.value)}} /></div>
@@ -100,7 +100,7 @@ const Homepage = () => {
     We truly believe in making environment friendly lighting solutions and have been
     focused on latest technology & innovation for developing energy efficient
     products.
-    <div className='heading2' style={{'textAlign':'center','color':'#ffbd59'}}>
+    <div className='heading2' style={{'textAlign':'center','color':'#d92126'}}>
         WHY US?
     </div>
     <div className="whyus">
@@ -108,25 +108,25 @@ const Homepage = () => {
      
      data-aos-easing="ease-in-out">
     <img src={mk} alt='mk'/>
-    <div className="textarea">We follow the principle of <b style={{'color':'white'}}>Make in India</b> and serve the nation by processing
+    <div className="textarea">We follow the principle of <b style={{'color':'black'}}>Make in India</b> and serve the nation by processing
     most of the raw material available in India.</div></div>
     <div className="card3" 
      
      data-aos-easing="ease-in-out" style={{'flexDirection':'row-reverse'}}>
     <img src={cs} alt='cs'/>
-    <div className="textarea"><b style={{'color':'white'}}>Customer satisfaction</b> is our prime objective.</div></div>
+    <div className="textarea"><b style={{'color':'black'}}>Customer satisfaction</b> is our prime objective.</div></div>
     
     <div className="card3" 
      
      data-aos-easing="ease-in-out">
     <img src={eef} alt='ss'/>
-    <div className="textarea">We make <b style={{'color':'white'}}>energy efficient yet economical products</b> with the help of latest
+    <div className="textarea">We make <b style={{'color':'black'}}>energy efficient yet economical products</b> with the help of latest
     technology & innovations.</div></div>
     <div className="card3" 
      
      data-aos-easing="ease-in-out" style={{'flexDirection':'row-reverse'}}>
     <img src={save} alt='s'/>
-    <div className="textarea" >Our latest product range offers principle of ,<b style={{'color':'white'}}>“SAVE ENERGY-SAVE THE
+    <div className="textarea" >Our latest product range offers principle of ,<b style={{'color':'black'}}>“SAVE ENERGY-SAVE THE
     ENVIRONMENT & ENHANCED VALUE FOR MONEY”.</b></div></div>
     </div>
     </div>
@@ -191,7 +191,7 @@ const Homepage = () => {
             </div></Link>
         </div>
       </div>
-      <div className='heading3'style={{'backgroundColor':'#ff1616','color':'#ffbd59',marginTop:'-20px','paddingTop':'20px'}} >
+      <div className='heading3'style={{'backgroundColor':'white','color':'#d92126',marginTop:'-20px','paddingTop':'20px'}} >
             CUSTOMER REVIEWS
       </div>
         <Reviews/>

@@ -60,9 +60,9 @@ const order=(e)=>{
       </div>
       <div id='mchecker'>
       <div className='heading3'>CHECKOUT</div>
-      <h4 style={{'textAlign':'center','color':'white'}}>The Services are only availabe in Gwalior!</h4>
+      <h4 style={{'textAlign':'center','color':'black'}}>The Services are only availabe in Gwalior!</h4>
       <div className='check-out-info'>
-        <h4 className='heading2' style={{'alignSelf':'center',fontWeight:'bold','color':'white'}}>ORDER SUMMARY</h4>
+        <h4 className='heading2' style={{'alignSelf':'center',fontWeight:'bold','color':'black'}}>ORDER SUMMARY</h4>
         <table className='table99'>
         <thead>
         <tr>
@@ -91,8 +91,8 @@ const order=(e)=>{
         ))}
       </tbody>
       </table>
-      <div className='heading2' style={{'fontSize':'15px','alignSelf':'center',paddingLeft:'10px',color:'white'}}>TOTAL BILLING AMOUNT : <b style={{'color':'white'}}><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{cartTotal}/-</b></div>
-      <div className='heading2' style={{ 'marginTop':"-10px",'fontSize':'15px','alignSelf':'center',paddingLeft:'10px',color:'white'}}>PAYMENT METHOD : PAY ON DELVERY</div>
+      <div className='heading2' style={{'fontSize':'15px','alignSelf':'center',paddingLeft:'10px',color:'black'}}>TOTAL BILLING AMOUNT : <b style={{'color':'#d92126'}}><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{cartTotal}/-</b></div>
+      <div className='heading2' style={{ 'marginTop':"-10px",'fontSize':'15px','alignSelf':'center',paddingLeft:'10px',color:'black'}}>PAYMENT METHOD : PAY ON DELVERY</div>
        <form className='check-out-form' onSubmit={order}>
           <div className='check-out-box'>
             <label>NAME : </label>

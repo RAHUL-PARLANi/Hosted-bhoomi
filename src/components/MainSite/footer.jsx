@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../images/logo3.png'
+import logo from '../../images/logo1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import FeedbackForm from './feedbackform'

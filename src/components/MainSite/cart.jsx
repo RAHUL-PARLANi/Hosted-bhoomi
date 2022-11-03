@@ -52,7 +52,7 @@ const {
       <tbody>
         {items.map((item) => (
           <tr key={item.id}>
-          <td style={{'color':'white', 'fontWeight':'600'}} >{item.name}</td>
+          <td style={{'color':'black', 'fontWeight':'600'}} >{item.name}</td>
           <td>{item.quantity}</td> 
           <td><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{item.price}</td>
           <td><FontAwesomeIcon icon="fa-solid fa-indian-rupee-sign" />{item.quantity * item.price}</td>

@@ -252,7 +252,7 @@ form{
     justify-content: space-evenly;
 }
 .ProductView{
-    background-color:#ff1616;
+    background-color:white;
     height: 100%;
     padding-top: 10px;
    }
@@ -286,7 +286,7 @@ form{
    letter-spacing: 0; 
    font-style: normal;
    font-weight: 500;
-   color:#ffbd59;
+   color:#d92126;
 }
 .product-price{
     font-family: 'Lato', sans-serif;
@@ -296,7 +296,7 @@ form{
     letter-spacing: 0.2px;
     font-style: normal;
     font-weight: 500;
-    color: white;
+    color: black;
 }
 .main-points{
     border-radius: 10px;
@@ -307,7 +307,7 @@ form{
     margin-top: 10px;
     border-radius: 10px;
     
-    color: white;
+    color: black;
 }
 .li{
     display: flex;
@@ -330,7 +330,7 @@ form{
     font-size: 25px;
     font-weight: 600;
     width: 100px;
-    color: white;
+    color: black;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -365,16 +365,16 @@ form{
     
 }
 .under-main{
-    background-color: #ffbd59;
+    background-color: white;
     padding: 20px;
     display: flex;
+    border-radius: 5px;
     flex-direction: column;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    
     margin-top: 10px;
-    border: 5px solid rgb(246, 155, 10);  
+    border: 5px solid #d92126;  
 }
 .labs{
     font-size: 16px;
@@ -408,9 +408,9 @@ form{
     font-style: normal;
     font-weight: 500;
     width: 300px;
-    background-color: #ffbd59;
+    background-color: #d92126;
     color: white;
-    border: 2px solid #ffbd59;
+    border: 2px solid #d92126;
     margin-right: 10px;
     height: 50px;
     border-radius: 10px;
@@ -418,7 +418,7 @@ form{
 }
 .cta button:hover{
     background-color: white;
-    color: #ffbd59;
+    color: #d92126;
     font-weight: 500;
 }
 .cta{
@@ -432,8 +432,11 @@ form{
 .card1{
     display: flex;
     width: 396px;
-    background-color: #ffbd59;
-    border: 10px solid rgb(246, 155, 10);
+    background: #ffffff;
+box-shadow:  8px 8px 11px #e8e8e8,
+             -8px -8px 11px #ffffff;
+    border: 10px solid white;
+    border-radius: 10px;
     padding: 5px;
     height: 290px;
     margin-bottom: 20px;
@@ -453,7 +456,7 @@ form{
     border-top-left-radius: 5px;
     border-bottom-right-radius: 50px;
     padding: 5px;
-    background-color: rgb(246, 155, 10);
+    background-color:#d92126;
     color: white;
 }
 .image-card img{
@@ -476,12 +479,16 @@ form{
     display: flex;
     position: relative;
     z-index: 3;
+    margin-bottom: 30px;
     flex-direction: column;
-    background: #ff1616;
+    background: white;
+    box-shadow:  8px 8px 11px #e8e8e8,
+             -8px -8px 11px #ffffff;
+
 }
 .UnderNavbar{
-    border-top: 1px solid #ff1616;
-    border-bottom: 1px solid #ff1616;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     
 }
 .under-content{
@@ -498,8 +505,8 @@ form{
     font-size: 14px;
     letter-spacing: 1.4px;
     font-style: normal;
-    font-weight: 400;
-    color:white;
+    font-weight: 500;
+    color:black;
 }
 Link:visited , .Navbar-content:hover{
     color: black;
@@ -519,18 +526,18 @@ align-items: center;
 .news{
 padding: 6px;
 text-align: center;
-background-color:#ffbd59;
+background-color:#d92126;
 font-family: 'Poppins',sans-serif ;
 font-size: 10px;
 letter-spacing: 0.5px;
 font-style: normal;
 font-weight: 600;
-color:  white;
+color: white;
 }
 .button-icons{
     width: 50px;
     align-self: center;
-    color: #ffbd59;
+    color: #d92126;
     font-size: large;
     cursor: pointer;
 }
@@ -538,7 +545,7 @@ color:  white;
     width: 50px;
     font-size: large;
     align-self: center;
-    color: #ffbd59;
+    color: #d92126;
     cursor: pointer;
 }
 .Recommended-Products{
@@ -555,9 +562,9 @@ color:  white;
     margin-top: 30px;
     background-color: white;
     z-index: 2;
-    border-left: 2px solid #ffbd59;
-    border-right: 2px solid #ffbd59;
-    border-top:  2px solid #ffbd59;
+    border-left: 2px solid #d92126;
+    border-right: 2px solid #d92126;
+    border-top:  2px solid #d92126;
     border-radius: 5px;
     font-weight: 600;
 }
@@ -575,7 +582,7 @@ color:  white;
     letter-spacing: 0.5px;
     font-style: normal;
     font-weight: 600;
-    color:white
+    color:black
 }
 .icons{
     align-self: center;
@@ -587,8 +594,8 @@ color:  white;
 .view-more{
     
     border-radius: 5px;
-    color: rgb(246, 155, 10);
-    background-color: white;
+    color:white;
+    background-color: #d92126;
     font-weight: 600;
     border: none;
     padding: 4px;
@@ -597,12 +604,12 @@ color:  white;
     
 }
 .shopbycategory{
-    background-color: #ff1616;
+    background-color: white;
     margin-top: -20px;
     padding-top: 20px;
 }
 .name{
-    color: black;
+    color: #d92126;
     font-weight: 600;
     font-size: 18px;
 }
@@ -622,11 +629,11 @@ color:  white;
     height: 120px;
 }
 .footer{
-  
+    margin-top: 10px;
     padding: 10px;
     color: white;
     font-family: 'poppins',sans-serif;
-    background-color: #ff1616;
+    background-color: #d92126;
 }
 .underFooter{
 display: flex;
@@ -641,7 +648,7 @@ justify-content: space-around;
 .form{
     margin-top: -10px;
     margin-left: -10px;
-    background-color: #ff1616;
+    background-color: #d92126;
 }
 .form label{
     font-weight: 500;
@@ -656,14 +663,14 @@ justify-content: space-around;
     color: white;
 }
 .button-form{
-    background-color: #ffbd59;
+    background-color: #d92126;
     border: none;
     border-radius: 5px;
     color: white;
     font-weight: 600;
 }
 .title{
-    color: #ffbd59;
+    color: white;
     margin-top: 20px;
     font-weight: 700;
     font-size:medium;
@@ -674,6 +681,7 @@ justify-content: space-around;
     margin-top: 10px;
     font-size: 12px;
     max-width: 300px;
+    color: white;
 }
 .credit{
     padding: 5px;
@@ -696,7 +704,7 @@ justify-content: space-around;
     text-align: center;
     color: white;
     padding: 5px;
-    background-color: #ff1616;
+    background-color: #d92126;
 }
 .footerimg{
     width: 100%;
@@ -706,11 +714,11 @@ justify-content: space-around;
     background-size:contain;
     background-position: center;
     background-image: url('../src/images/footer.png');
-    background-color: #ff1616;
+    background-color: #d92126;
     background-position:0 0 5px;
 }
 .Listproducts{
-    background-color: #ff1616;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -718,7 +726,7 @@ justify-content: space-around;
 .productfilter{
     display: flex;
     margin-top: 20px;
-    background-color: #ffbd59;
+    background-color: #d92126;
     color: white;
     padding: 10px;
     width: 600px;
@@ -758,10 +766,14 @@ justify-content: space-around;
     width: 90%;
 }
 .card2{
+    box-shadow:  8px 8px 11px #e8e8e8,
+             -8px -8px 11px #ffffff;
+
     height: 500px;
     width: 400px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -769,10 +781,11 @@ justify-content: space-around;
 .card2 img{
     height: 400px;
     width: 400px;
-    border: #ffbd59 solid 5px;
+    border-radius: 10px;
+    border: white solid 5px;
 }
 .card2 .title-card2{
-    color: white;
+    color: black;
     text-align: center;
     font-size: x-large;
     font-weight: 600;
@@ -785,7 +798,7 @@ justify-content: space-around;
     font-weight: 700;
     letter-spacing: -0.2px;
     font-family: 'poppins',sans-serif;
-    color: #ffbd59;
+    color: #d92126;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -793,7 +806,7 @@ justify-content: space-around;
 .Shopnow{
     border: none;
     border-radius: 5px;
-    background-color: #ffbd59;
+    background-color: #d92126;
     color: white;
     padding: 5px;
     padding-left: 10px;
@@ -812,7 +825,7 @@ justify-content: space-around;
  }
  .description-reviewer{
     font-size: 15px;
-    color: white;
+    color: black;
     font-family: 'poppins',sans-serif;
     font-style: italic;
     font-weight: 600;
@@ -828,7 +841,7 @@ justify-content: space-around;
  }
  .name-reviewer{
     text-align: right;
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: 'poppins',sans-serif;
     letter-spacing: 0.2px;
@@ -841,7 +854,9 @@ justify-content: space-around;
    width: 95%;
    justify-content: space-around;
    border-radius: 20px;
-   border: white solid 10px;
+   border: #d92126 solid 10px;
+   box-shadow:  8px 8px 11px #e8e8e8,
+             -8px -8px 11px #ffffff;
 }
  .left img{
     border: white solid 5px;
@@ -862,14 +877,14 @@ justify-content: space-around;
     align-items: center;
     margin-top: -20px;
     padding-top: 20px;
-    background-color: #ff1616;
+    background-color: white;
 }
 .clearfilter{
     background-color: white;
-    color:rgb(246, 155, 10);
+    color:#d92126;
     font-weight: 700;
     border-radius: 10px;
-    border: 5px solid rgb(246, 155, 10);
+    border: 5px solid #d92126;
 }
 select , option {
     margin-top: auto;
@@ -882,7 +897,7 @@ select , option {
 #mchecker{
     margin-top: -20px;
     padding-top: 20px;
-    background-color: #ff1616;
+    background-color: white;
     padding-bottom: 20px;
 }
 .title-content:hover{
@@ -897,8 +912,8 @@ select , option {
     position: absolute;
     margin-left: 26px;
     margin-top: -10px;
-    color: #ffbd59;
-    background-color: white;
+    color: white;
+    background-color:black;
     border-radius: 50%;
     width: 15px;
     font-weight: 900;
@@ -919,8 +934,7 @@ select , option {
     justify-content: space-between;
 }
 .os-title{
-    color:white;
-    background-color: #ff1616;
+    color:#d92126;
     padding-left: 10px;
     padding-bottom: 5px;
     font-weight: 600;
@@ -933,19 +947,19 @@ select , option {
 .sb-total{
     font-family: 'poppins',sans-serif;
     font-weight: 600;
-    color: white;
+    color: #d92126;
 }
 .sb-rupee{
     font-family: 'poppins',sans-serif;
     font-weight: 600;
-    color: white;
+    color: black;
 }
 .update-button{
     width: 25px;
     height: 25px;
     border:none;
     border-radius: 8px;
-    color:rgb(246, 155, 10);
+    color:#d92126;
     padding-top: 0px;
     background-color: white;
     margin: 5px;
@@ -956,32 +970,32 @@ thead{
     letter-spacing: 0.3px;
 }
 .table99 tbody{
-    border: 1px solid #ffbd59;
+    border: 1px solid #d92126;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.3px;
 }
 .table99 th{
-    color: #ffbd59;
+    color: #d92126;
     font-weight: 600;
 }
-.table99 td{ color: white;
+.table99 td{ color:black;
     padding: 10px;
 }
 .cta-buttons{
     background-color: white;
     border-radius: 10px;
-    border: rgb(246, 155, 10) 2px solid;
-    color: rgb(246, 155, 10);
+    border: #d92126 2px solid;
+    color: #d92126;
     font-weight: 600;
     padding: 5px;
 }
 
 .cta-buttons-1{
-    background-color: rgb(246, 155, 10);
+    background-color: #d92126;
     border-radius: 10px;
-    border: rgb(246, 155, 10) 2px solid;
+    border: #d92126 2px solid;
     color: white;
     font-weight: 600;
     padding: 5px;
@@ -995,7 +1009,7 @@ thead{
     padding: 10px;
     right: auto;
     text-align: center;
-    background-color:  #ffbd59;
+    background-color:  #d92126;
     color: white;
     font-weight: 600;
     border-radius: 10px;
@@ -1004,8 +1018,8 @@ thead{
 .Service-from{
     width: 300px;
     right: 0;
-    border:10px solid rgb(246, 155, 10);
-    background-color: #ffbd59;
+    border:3px solid #d92126;
+    background-color: white;
     color: white;
     text-align: center; 
     position: absolute;
@@ -1020,7 +1034,7 @@ thead{
 }
 .Tittle{
     font-family: 'poppins',sans-serif;
-    color: white;
+    color: black;
     font-size: 17px;
     letter-spacing:0.8px;
     font-weight: 600;
@@ -1028,9 +1042,9 @@ thead{
 .form-box1 input ,.form-box1 textarea {
     width: 100%;
 
-    background-color: rgb(246, 155, 10);
+    background-color: white;
     border-radius: 5px;
-    border: rgb(246, 155, 10) 2px solid;
+    border: #d92126 2px solid;
     margin-bottom: 10px;
     height: 35px;
 }
@@ -1038,6 +1052,7 @@ thead{
     height: 160px;
 }
 .form-box1 label{
+    color: black;
     font-size: 13px;
     font-weight: 400;
     text-align: left;
@@ -1053,7 +1068,7 @@ thead{
  padding-bottom: 30px;
  margin-left: auto;
  margin-right: auto;
- border: 1px solid #ffbd59;
+ border: 1px solid #d92126;
  display: flex;
  flex-direction: column;
  align-items: center;    
@@ -1065,23 +1080,23 @@ thead{
     
 }
 .check-out-box input , .check-out-box textarea{
-    border: #ffbd59 3px solid;
+    border: #d92126 3px solid;
     border-radius: 2px;
     padding: 5px;
     background-color: white;
 }
 .check-out-box input:hover , .check-out-box textarea:hover {
-    border: #ffbd59 3px solid;
+    border: #d92126 3px solid;
     border-radius: 2px;
     padding: 5px;
-    color: #7b283c;
+    color: black;
     background-color: white;
 }
 .check-out-box label{
     margin-bottom: 3px;
     margin-top: 15px;
     text-align: left;
-    color: white;
+    color: black;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.1px;
@@ -1095,7 +1110,7 @@ thead{
 }
 .check-out-form{
     width: 50%;
-    background-color: #ff1616;
+    background-color: white;
     justify-self: center;
 }
 #pop{
@@ -1119,7 +1134,7 @@ thead{
     overflow-y: scroll;
 }
 .Contenthero{
-    color: white;
+    color: black;
     font-size: 17px;
     font-family:'poppins',sans-serif;
     text-transform:capitalize;
@@ -1165,7 +1180,7 @@ thead{
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    background-color: #ff1616;
+    background-color: white;
 }
 .boxer{
     display: flex;
@@ -1177,24 +1192,24 @@ thead{
     margin-top: 10px;
     font-size: large;
     font-weight: 600;
-    color: white;
+    color: black;
 }
 .info-main-data{
-    color: #ffbd59;
+    color: black;
     width: 300px;
     margin-top: 10px;
     font-weight: 600;
     font-size: large;
 }
 .info-label{
-    color:#ffbd59;
+    color:black;
     width: 300px;
     font-weight: 600;
     font-size: medium;
     margin-top: 10px;
 }
 .info-data{
-    color: white;
+    color: black;
     margin-top: 10px;
     font-weight: 600;
     width: 300px;   
@@ -1257,8 +1272,8 @@ thead{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background:#ffbd59;
-    max-width: 5px; 
+    background:#d92126;
+    max-width: 2px; 
     border-radius: 10px;
   }
    
@@ -1266,13 +1281,13 @@ thead{
   ::-webkit-scrollbar-thumb {
     background-color:white;
     border-radius:12px;
-    max-width: 5px;
+    max-width: 2px;
     
     }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    width:13px;
+    width:2px;
     background-color:white;
     
   
@@ -1330,9 +1345,11 @@ thead{
     flex-direction: column;
   }
   .card3{
-    background-color: #ffbd59;
-    border: rgb(246, 155, 10) solid 10px;
+    box-shadow:  8px 8px 11px #e8e8e8,
+             -8px -8px 11px #ffffff;
+    border: white solid 10px;
     margin: 10px;
+    border-radius: 10px;
     padding: 10px;
     display: flex;
     width: 800px;
@@ -1360,7 +1377,7 @@ thead{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    border: rgb(246, 155, 10) 4px solid;
+    border: #d92126 4px solid;
     border-radius: 10px;
     height: 35px;
     margin-top: 10px;

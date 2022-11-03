@@ -256,7 +256,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Navbar from './navbar';
 import axios from "axios";
 import Footer from './footer';
-import AOS from 'aos'
+import AOS from 'aos';
+
 class CLlist extends Component {
     
   constructor(props) {
@@ -481,31 +482,31 @@ Namedec(){
     </Helmet>
     <Navbar/>
     <div className='Listproducts'>
-   
+     <img src={'https://www.ledfy.in/catalog/view/theme/default/image/banner3.png'} height='400px'/>
       <div className='productfilter'>
         <div className='Sorter' style={{'display':'flex'}}>
             <div  className='same tags'>SORT : </div>
-            <div className='select' style={{'position':'absolute','color':'rgb(246, 155, 10)'}}>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{openfilter()}} style={{'marginLeft':'0px','padding':'5px'}} className='same1 tags-details'>SELECT</div></div>
-            <div id='filteroperner' style={{'display':'none'}}><div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.priceass()}} className='same1 tags-details'>BY PRICE LOW TO HIGH</div></div>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.pricedec()}} className='same1 tags-details'>BY PRICE HIGH TO LOW</div></div>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.wattacc()}} className='same1 tags-details'>BY AVAILANILITY STATUS</div></div>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.likes()}} className='same1 tags-details'>BY MOST POPULAR</div></div>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.Name()}} className='same1 tags-details'>BY A To Z</div></div>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.Namedec()}} className='same1 tags-details'>BY Z To A</div></div>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{closefilter()}} className='same1 tags-details'>CLOSE</div>
+            <div className='select' style={{'position':'absolute','color':'#d92126'}}>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{openfilter()}} style={{'marginLeft':'0px','padding':'5px'}} className='same1 tags-details'>SELECT</div></div>
+            <div id='filteroperner' style={{'display':'none'}}><div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.priceass()}} className='same1 tags-details'>BY PRICE LOW TO HIGH</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.pricedec()}} className='same1 tags-details'>BY PRICE HIGH TO LOW</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.wattacc()}} className='same1 tags-details'>BY AVAILANILITY STATUS</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.likes()}} className='same1 tags-details'>BY MOST POPULAR</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.Name()}} className='same1 tags-details'>BY A To Z</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.Namedec()}} className='same1 tags-details'>BY Z To A</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{closefilter()}} className='same1 tags-details'>CLOSE</div>
             </div>
             </div></div>
         </div>
         <div className='Sorter' style={{'display':'flex'}}>
             <div  className='same tags'>FILTER : </div>
             <div className='select' style={{'position':'absolute','color':'black'}}>
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{openfilter1()}} style={{'marginLeft':'0px','padding':'5px'}} className='same1 tags-details'>SELECT</div></div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{openfilter1()}} style={{'marginLeft':'0px','padding':'5px'}} className='same1 tags-details'>SELECT</div></div>
             <div id='filteroperner1' style={{'display':'none'}}>
             {this.props.category.map(element=>{
-              return   <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{this.filterfl(element)}} className='same1 tags-details'>{element}</div></div>
+              return   <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{this.filterfl(element)}} className='same1 tags-details'>{element}</div></div>
             })}
-            <div style={{'color':'rgb(246, 155, 10)','borderBottom':'2px solid rgb(246, 155, 10)'}}><div onClick={()=>{closefilter1()}} className='same1 tags-details'>CLOSE</div>
+            <div style={{'color':'#d92126','borderBottom':'2px solid #d92126'}}><div onClick={()=>{closefilter1()}} className='same1 tags-details'>CLOSE</div>
             </div>
             </div></div>
         </div>
